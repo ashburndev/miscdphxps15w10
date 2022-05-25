@@ -1,0 +1,667 @@
+8:22 AM 5/24/2022
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Microsoft Windows [Version 10.0.19043.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>chkdsk /r c:
+The type of the file system is NTFS.
+Cannot lock current drive.
+
+Chkdsk cannot run because the volume is in use by another
+process.  Would you like to schedule this volume to be
+checked the next time the system restarts? (Y/N) n
+
+C:\WINDOWS\system32>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Microsoft Windows [Version 10.0.19043.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>date /t
+Tue 05/24/2022
+
+C:\Users\David Holberton>time /t
+10:27 AM
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>diskpart
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Microsoft DiskPart version 10.0.19041.964
+
+Copyright (C) Microsoft Corporation.
+On computer: DPHXPS15
+
+DISKPART> list disk
+
+  Disk ###  Status         Size     Free     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  Disk 0    Online          476 GB    11 MB        *
+
+DISKPART> select disk 0
+
+Disk 0 is now the selected disk.
+
+DISKPART> list volume
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 0     C                NTFS   Partition    474 GB  Healthy    Boot
+  Volume 1         ESP          FAT32  Partition    500 MB  Healthy    System
+  Volume 2                      NTFS   Partition    927 MB  Healthy    Hidden
+  Volume 3         DELLSUPPORT  NTFS   Partition   1086 MB  Healthy    Hidden
+
+DISKPART>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.linuxtechi.com/dual-boot-ubuntu-22-04-and-windows-11/
+
+So, open the disk management utility by pressing Windows Key + R
+In the dialogue box, type diskmgmt.msc and hit ENTER.
+
+https://www.dell.com/support/manuals/en-us/xps-17-9700-laptop/xps-17-9700-service-manual/navigation-keys?guid=guid-f448dd64-1b07-4857-a446-42e313a39cc8&lang=en-us
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+[5/18 8:45 AM] david.holberton (Guest)
+    [yesterday, in office, PEGA-136] used docx file from Jonathan (unzipped, examined docvar contents). Wrote small app to parse structure.sql to extract table and foreign key info to csv file, imported into Excel spreadsheet.  Blocker: ADN FidOS was slow, practically unusable.
+[today, remote, PEGA-136] using working RoR environment, will examine MySQL db tables and foreign keys relationships (to compare to structure.sql on ADN)
+[tomorrow, in office, PEGA-136] looking forward to self-publishing demo, want to see data extracted from docx, and then using GUI to supply metadata during self publishing
+<https://teams.microsoft.com/l/message/19:ec5ad22f3d6048938b65d9bce9106d3c@thread.tacv2/1652877924212?tenantId=cdd15a1b-d5c2-495c-a98e-ed589723db23&amp;groupId=188e2ba0-3b86-490b-9238-0bc1a4c27da6&amp;parentMessageId=1652877924212&amp;teamName=MAXIMUS&amp;channelName=Daily Standup&amp;createdTime=1652877924212>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Working remote today on PEGA-136. Also downloading Elasticsearch/Kibana 7.1.1 pair (apparently used by WIRe Test ... and Prod also?). With much help yesterday, able to resolve access the remaining NCTC-PEGASUS repositories that I could not access (thanks).
+
+[8:29 AM] david.holberton (Guest)
+    Working remote today on PEGA-136. Also downloading Elasticsearch/Kibana 7.1.1 pair (apparently used by WIRe Test ... and Prod also?). With much help yesterday, able to resolve access the remaining NCTC-PEGASUS repositories that I could not access (thanks).
+<https://teams.microsoft.com/l/message/19:ec5ad22f3d6048938b65d9bce9106d3c@thread.tacv2/1653395377318?tenantId=cdd15a1b-d5c2-495c-a98e-ed589723db23&amp;groupId=188e2ba0-3b86-490b-9238-0bc1a4c27da6&amp;parentMessageId=1653395377318&amp;teamName=MAXIMUS&amp;channelName=Daily Standup&amp;createdTime=1653395377318>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.elastic.co/elasticsearch/?ultron=B-Stack-Trials-AMER-US-E-Exact&gambit=Stack-DownloadTerms&blade=adwords-s&hulk=paid&Device=c&thor=elasticsearch%20download&gclid=EAIaIQobChMIxdbL3ZL49wIV6P7jBx0OSQq9EAAYASAAEgLAQ_D_BwE
+
+https://www.elastic.co/downloads/
+https://www.elastic.co/downloads/elasticsearch
+https://www.elastic.co/guide/en/elasticsearch/reference/7.1/release-notes-7.1.1.html
+https://www.elastic.co/guide/en/elastic-stack/8.2/upgrading-elastic-stack.html
+
+Prepare to upgrade from 7.x
+
+To upgrade to 8.2.0 from 7.16 or earlier, you must first upgrade to 7.17. This enables you to use the Upgrade Assistant to identify and resolve issues, reindex indices created before 7.0, and then perform a rolling upgrade.
+
+Upgrading to 7.17 before upgrading to 8.2.0 is required even if you opt to do a full-cluster restart of your Elasticsearch cluster. Alternatively, you can create a new 8.2.0 deployment and reindex from remote. For more information, see Reindex to upgrade.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.elastic.co/downloads/kibana
+https://www.elastic.co/guide/en/kibana/7.1/release-notes-7.1.1.html
+https://www.elastic.co/guide/en/kibana/current/upgrade.html
+
+Upgrade Kibana
+
+To upgrade from 7.16.0 or earlier to 8.2.0, you must first upgrade to 7.17, which enables you to use the Upgrade Assistant to prepare for the upgrade. Before you upgrade, you must resolve all critical issues identified by the Upgrade Assistant.
+
+Rolling upgrades are unsupported in Kibana. To upgrade, you must shut down all Kibana instances, install the new software, and restart Kibana. Upgrading while older Kibana instances are running can cause data loss or upgrade failures.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+03/31/2022  05:18 PM       318,595,362 elasticsearch-8.1.2-windows-x86_64.zip
+03/31/2022  05:18 PM               169 elasticsearch-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:18 PM               488 elasticsearch-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:21 PM       393,500,579 kibana-8.1.2-windows-x86_64.zip
+03/31/2022  05:21 PM               162 kibana-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:21 PM               488 kibana-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:35 PM       352,073,951 logstash-8.1.2-windows-x86_64.zip
+03/31/2022  05:36 PM               164 logstash-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:36 PM               488 logstash-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:38 PM        29,179,904 metricbeat-8.1.2-windows-x86_64.msi
+03/31/2022  05:38 PM               166 metricbeat-8.1.2-windows-x86_64.msi.sha512
+03/31/2022  05:38 PM               488 metricbeat-8.1.2-windows-x86_64.msi.asc
+03/31/2022  05:49 PM            53,600 elasticsearch-in-action-main.zip
+03/31/2022  07:47 PM       304,227,684 elasticsearch-7.17.2-windows-x86_64.zip
+03/31/2022  07:47 PM               170 elasticsearch-7.17.2-windows-x86_64.zip.sha512
+03/31/2022  07:51 PM       403,752,639 kibana-7.17.2-windows-x86_64.zip
+03/31/2022  07:51 PM               163 kibana-7.17.2-windows-x86_64.zip.sha512
+
+05/18/2022  09:13 AM       333,385,871 elasticsearch-8.2.0-windows-x86_64.zip
+05/18/2022  09:13 AM               169 elasticsearch-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:13 AM               488 elasticsearch-8.2.0-windows-x86_64.zip.asc
+05/18/2022  09:14 AM       370,017,363 kibana-8.2.0-windows-x86_64.zip
+05/18/2022  09:14 AM               162 kibana-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:14 AM               488 kibana-8.2.0-windows-x86_64.zip.asc
+05/18/2022  04:22 PM        33,808,068 elasticsearch-5.6.5.zip
+05/18/2022  04:22 PM               128 elasticsearch-5.6.5.zip.sha512
+05/18/2022  04:26 PM        58,508,310 kibana-5.6.5-windows-x86.zip
+05/18/2022  04:27 PM               128 kibana-5.6.5-windows-x86.zip.sha512
+05/24/2022  08:38 AM       341,198,587 elasticsearch-7.1.1-windows-x86_64.zip
+05/24/2022  08:38 AM               168 elasticsearch-7.1.1-windows-x86_64.zip.sha512
+05/24/2022  08:51 AM       194,613,498 kibana-7.1.1-windows-x86_64.zip
+05/24/2022  08:51 AM               161 kibana-7.1.1-windows-x86_64.zip.sha512
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+def history = """\
+Elasticsearch 8.2.0
+May 03, 2022
+See Release NotesDownload
+Elasticsearch 8.1.3
+April 20, 2022
+See Release NotesDownload
+Elasticsearch 8.1.2
+March 31, 2022
+See Release NotesDownload
+Elasticsearch 8.1.1
+March 22, 2022
+See Release NotesDownload
+Elasticsearch 8.1.0
+March 08, 2022
+See Release NotesDownload"""
+// history.eachLine {line, index -> }
+// history.eachWithIndex {line, index -> } // iterates by character, not line
+def linecount = 0
+history.eachLine {line, index ->
+  linecount++
+  switch (linecount % 3) {
+    case 1: print(line); break;
+    case 2: println ("  $line")
+  }
+  // println "$linecount $line"
+} 
+println "done"
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Elasticsearch 8.2.0
+May 03, 2022
+See Release NotesDownload
+Elasticsearch 8.1.3
+April 20, 2022
+See Release NotesDownload
+Elasticsearch 8.1.2
+March 31, 2022
+See Release NotesDownload
+Elasticsearch 8.1.1
+March 22, 2022
+See Release NotesDownload
+Elasticsearch 8.1.0
+March 08, 2022
+See Release NotesDownload
+Elasticsearch 8.0.1
+March 01, 2022
+See Release NotesDownload
+Elasticsearch 8.0.0
+February 10, 2022
+See Release NotesDownload
+Elasticsearch 7.17.3
+April 20, 2022
+See Release NotesDownload
+Elasticsearch 7.17.2
+March 31, 2022
+See Release NotesDownload
+Elasticsearch 7.17.1
+February 28, 2022
+See Release NotesDownload
+Elasticsearch 7.17.0
+February 01, 2022
+See Release NotesDownload
+Elasticsearch 7.16.3
+January 13, 2022
+See Release NotesDownload
+Elasticsearch 7.16.2
+December 19, 2021
+See Release NotesDownload
+Elasticsearch 7.16.1
+December 13, 2021
+See Release NotesDownload
+Elasticsearch 7.16.0
+December 07, 2021
+See Release NotesDownload
+Elasticsearch 7.15.2
+November 10, 2021
+See Release NotesDownload
+Elasticsearch 7.15.1
+October 14, 2021
+See Release NotesDownload
+Elasticsearch 7.15.0
+September 22, 2021
+See Release NotesDownload
+Elasticsearch 7.14.2
+September 21, 2021
+See Release NotesDownload
+Elasticsearch 7.14.1
+September 01, 2021
+See Release NotesDownload
+Elasticsearch 7.14.0
+August 03, 2021
+See Release NotesDownload
+Elasticsearch 7.13.4
+July 20, 2021
+See Release NotesDownload
+Elasticsearch 7.13.3
+July 07, 2021
+See Release NotesDownload
+Elasticsearch 7.13.2
+June 14, 2021
+See Release NotesDownload
+Elasticsearch 7.13.1
+June 02, 2021
+See Release NotesDownload
+Elasticsearch 7.13.0
+May 25, 2021
+See Release NotesDownload
+Elasticsearch 7.12.1
+April 27, 2021
+See Release NotesDownload
+Elasticsearch 7.12.0
+March 23, 2021
+See Release NotesDownload
+Elasticsearch 7.11.2
+March 10, 2021
+See Release NotesDownload
+Elasticsearch 7.11.1
+February 17, 2021
+See Release NotesDownload
+Elasticsearch 7.11.0
+February 10, 2021
+See Release NotesDownload
+Elasticsearch 7.10.2
+January 14, 2021
+See Release NotesDownload
+Elasticsearch 7.10.1
+December 09, 2020
+See Release NotesDownload
+Elasticsearch 7.10.0
+November 11, 2020
+See Release NotesDownload
+Elasticsearch 7.9.3
+October 22, 2020
+See Release NotesDownload
+Elasticsearch 7.9.2
+September 24, 2020
+See Release NotesDownload
+Elasticsearch 7.9.1
+September 03, 2020
+See Release NotesDownload
+Elasticsearch 7.9.0
+August 18, 2020
+See Release NotesDownload
+Elasticsearch 7.8.1
+July 27, 2020
+See Release NotesDownload
+Elasticsearch 7.8.0
+June 18, 2020
+See Release NotesDownload
+Elasticsearch 7.7.1
+June 03, 2020
+See Release NotesDownload
+Elasticsearch 7.7.0
+May 13, 2020
+See Release NotesDownload
+Elasticsearch 7.6.2
+March 31, 2020
+See Release NotesDownload
+Elasticsearch 7.6.1
+March 04, 2020
+See Release NotesDownload
+Elasticsearch 7.6.0
+February 11, 2020
+See Release NotesDownload
+Elasticsearch 7.5.2
+January 21, 2020
+See Release NotesDownload
+Elasticsearch 7.5.1
+December 18, 2019
+See Release NotesDownload
+Elasticsearch 7.5.0
+December 02, 2019
+See Release NotesDownload
+Elasticsearch 7.4.2
+October 31, 2019
+See Release NotesDownload
+Elasticsearch 7.4.1
+October 23, 2019
+See Release NotesDownload
+Elasticsearch 7.4.0
+October 01, 2019
+See Release NotesDownload
+Elasticsearch 7.3.2
+September 12, 2019
+See Release NotesDownload
+Elasticsearch 7.3.1
+August 22, 2019
+See Release NotesDownload
+Elasticsearch 7.3.0
+July 31, 2019
+See Release NotesDownload
+Elasticsearch 7.2.1
+July 30, 2019
+See Release NotesDownload
+Elasticsearch 7.2.0
+June 25, 2019
+See Release NotesDownload
+Elasticsearch 7.1.1
+May 28, 2019
+See Release NotesDownload
+Elasticsearch 7.1.0
+May 20, 2019
+See Release NotesDownload
+Elasticsearch 7.0.1
+May 01, 2019
+See Release NotesDownload
+Elasticsearch 7.0.0
+April 10, 2019
+
+
+
+Kibana 8.2.0
+May 03, 2022
+See Release NotesDownload
+Kibana 8.1.3
+April 20, 2022
+See Release NotesDownload
+Kibana 8.1.2
+March 31, 2022
+See Release NotesDownload
+Kibana 8.1.1
+March 22, 2022
+See Release NotesDownload
+Kibana 8.1.0
+March 08, 2022
+See Release NotesDownload
+Kibana 8.0.1
+March 01, 2022
+See Release NotesDownload
+Kibana 8.0.0
+February 10, 2022
+See Release NotesDownload
+Kibana 7.17.3
+April 20, 2022
+See Release NotesDownload
+Kibana 7.17.2
+March 31, 2022
+See Release NotesDownload
+Kibana 7.17.1
+February 28, 2022
+See Release NotesDownload
+Kibana 7.17.0
+February 01, 2022
+See Release NotesDownload
+Kibana 7.16.3
+January 13, 2022
+See Release NotesDownload
+Kibana 7.16.2
+December 19, 2021
+See Release NotesDownload
+Kibana 7.16.1
+December 13, 2021
+See Release NotesDownload
+Kibana 7.16.0
+December 07, 2021
+See Release NotesDownload
+Kibana 7.15.2
+November 10, 2021
+See Release NotesDownload
+Kibana 7.15.1
+October 14, 2021
+See Release NotesDownload
+Kibana 7.15.0
+September 22, 2021
+See Release NotesDownload
+Kibana 7.14.2
+September 21, 2021
+See Release NotesDownload
+Kibana 7.14.1
+September 01, 2021
+See Release NotesDownload
+Kibana 7.14.0
+August 03, 2021
+See Release NotesDownload
+Kibana 7.13.4
+July 20, 2021
+See Release NotesDownload
+Kibana 7.13.3
+July 07, 2021
+See Release NotesDownload
+Kibana 7.13.2
+June 14, 2021
+See Release NotesDownload
+Kibana 7.13.1
+June 02, 2021
+See Release NotesDownload
+Kibana 7.13.0
+May 25, 2021
+See Release NotesDownload
+Kibana 7.12.1
+April 27, 2021
+See Release NotesDownload
+Kibana 7.12.0
+March 23, 2021
+See Release NotesDownload
+Kibana 7.11.2
+March 10, 2021
+See Release NotesDownload
+Kibana 7.11.1
+February 17, 2021
+See Release NotesDownload
+Kibana 7.11.0
+February 10, 2021
+See Release NotesDownload
+Kibana 7.10.2
+January 14, 2021
+See Release NotesDownload
+Kibana 7.10.1
+December 09, 2020
+See Release NotesDownload
+Kibana 7.10.0
+November 11, 2020
+See Release NotesDownload
+Kibana 7.9.3
+October 22, 2020
+See Release NotesDownload
+Kibana 7.9.2
+September 24, 2020
+See Release NotesDownload
+Kibana 7.9.1
+September 03, 2020
+See Release NotesDownload
+Kibana 7.9.0
+August 18, 2020
+See Release NotesDownload
+Kibana 7.8.1
+July 27, 2020
+See Release NotesDownload
+Kibana 7.8.0
+June 18, 2020
+See Release NotesDownload
+Kibana 7.7.1
+June 03, 2020
+See Release NotesDownload
+Kibana 7.7.0
+May 13, 2020
+See Release NotesDownload
+Kibana 7.6.2
+March 31, 2020
+See Release NotesDownload
+Kibana 7.6.1
+March 04, 2020
+See Release NotesDownload
+Kibana 7.6.0
+February 11, 2020
+See Release NotesDownload
+Kibana 7.5.2
+January 21, 2020
+See Release NotesDownload
+Kibana 7.5.1
+December 18, 2019
+See Release NotesDownload
+Kibana 7.5.0
+December 02, 2019
+See Release NotesDownload
+Kibana 7.4.2
+October 31, 2019
+See Release NotesDownload
+Kibana 7.4.1
+October 23, 2019
+See Release NotesDownload
+Kibana 7.4.0
+October 01, 2019
+See Release NotesDownload
+Kibana 7.3.2
+September 12, 2019
+See Release NotesDownload
+Kibana 7.3.1
+August 22, 2019
+See Release NotesDownload
+Kibana 7.3.0
+July 31, 2019
+See Release NotesDownload
+Kibana 7.2.1
+July 30, 2019
+See Release NotesDownload
+Kibana 7.2.0
+June 25, 2019
+See Release NotesDownload
+Kibana 7.1.1
+May 28, 2019
+See Release NotesDownload
+Kibana 7.1.0
+May 20, 2019
+See Release NotesDownload
+Kibana 7.0.1
+May 01, 2019
+See Release NotesDownload
+Kibana 7.0.0
+April 10, 2019
+
+
+Elasticsearch 8.2.0  May 03, 2022
+Elasticsearch 8.1.3  April 20, 2022
+Elasticsearch 8.1.2  March 31, 2022
+Elasticsearch 8.1.1  March 22, 2022
+Elasticsearch 8.1.0  March 08, 2022
+Elasticsearch 8.0.1  March 01, 2022
+Elasticsearch 8.0.0  February 10, 2022
+Elasticsearch 7.17.3  April 20, 2022
+Elasticsearch 7.17.2  March 31, 2022
+Elasticsearch 7.17.1  February 28, 2022
+Elasticsearch 7.17.0  February 01, 2022
+Elasticsearch 7.16.3  January 13, 2022
+Elasticsearch 7.16.2  December 19, 2021
+Elasticsearch 7.16.1  December 13, 2021
+Elasticsearch 7.16.0  December 07, 2021
+Elasticsearch 7.15.2  November 10, 2021
+Elasticsearch 7.15.1  October 14, 2021
+Elasticsearch 7.15.0  September 22, 2021
+Elasticsearch 7.14.2  September 21, 2021
+Elasticsearch 7.14.1  September 01, 2021
+Elasticsearch 7.14.0  August 03, 2021
+Elasticsearch 7.13.4  July 20, 2021
+Elasticsearch 7.13.3  July 07, 2021
+Elasticsearch 7.13.2  June 14, 2021
+Elasticsearch 7.13.1  June 02, 2021
+Elasticsearch 7.13.0  May 25, 2021
+Elasticsearch 7.12.1  April 27, 2021
+Elasticsearch 7.12.0  March 23, 2021
+Elasticsearch 7.11.2  March 10, 2021
+Elasticsearch 7.11.1  February 17, 2021
+Elasticsearch 7.11.0  February 10, 2021
+Elasticsearch 7.10.2  January 14, 2021
+Elasticsearch 7.10.1  December 09, 2020
+Elasticsearch 7.10.0  November 11, 2020
+Elasticsearch 7.9.3  October 22, 2020
+Elasticsearch 7.9.2  September 24, 2020
+Elasticsearch 7.9.1  September 03, 2020
+Elasticsearch 7.9.0  August 18, 2020
+Elasticsearch 7.8.1  July 27, 2020
+Elasticsearch 7.8.0  June 18, 2020
+Elasticsearch 7.7.1  June 03, 2020
+Elasticsearch 7.7.0  May 13, 2020
+Elasticsearch 7.6.2  March 31, 2020
+Elasticsearch 7.6.1  March 04, 2020
+Elasticsearch 7.6.0  February 11, 2020
+Elasticsearch 7.5.2  January 21, 2020
+Elasticsearch 7.5.1  December 18, 2019
+Elasticsearch 7.5.0  December 02, 2019
+Elasticsearch 7.4.2  October 31, 2019
+Elasticsearch 7.4.1  October 23, 2019
+Elasticsearch 7.4.0  October 01, 2019
+Elasticsearch 7.3.2  September 12, 2019
+Elasticsearch 7.3.1  August 22, 2019
+Elasticsearch 7.3.0  July 31, 2019
+Elasticsearch 7.2.1  July 30, 2019
+Elasticsearch 7.2.0  June 25, 2019
+Elasticsearch 7.1.1  May 28, 2019
+Elasticsearch 7.1.0  May 20, 2019
+Elasticsearch 7.0.1  May 01, 2019
+Elasticsearch 7.0.0  April 10, 2019
+done
+
+Kibana 8.2.0  May 03, 2022
+Kibana 8.1.3  April 20, 2022
+Kibana 8.1.2  March 31, 2022
+Kibana 8.1.1  March 22, 2022
+Kibana 8.1.0  March 08, 2022
+Kibana 8.0.1  March 01, 2022
+Kibana 8.0.0  February 10, 2022
+Kibana 7.17.3  April 20, 2022
+Kibana 7.17.2  March 31, 2022
+Kibana 7.17.1  February 28, 2022
+Kibana 7.17.0  February 01, 2022
+Kibana 7.16.3  January 13, 2022
+Kibana 7.16.2  December 19, 2021
+Kibana 7.16.1  December 13, 2021
+Kibana 7.16.0  December 07, 2021
+Kibana 7.15.2  November 10, 2021
+Kibana 7.15.1  October 14, 2021
+Kibana 7.15.0  September 22, 2021
+Kibana 7.14.2  September 21, 2021
+Kibana 7.14.1  September 01, 2021
+Kibana 7.14.0  August 03, 2021
+Kibana 7.13.4  July 20, 2021
+Kibana 7.13.3  July 07, 2021
+Kibana 7.13.2  June 14, 2021
+Kibana 7.13.1  June 02, 2021
+Kibana 7.13.0  May 25, 2021
+Kibana 7.12.1  April 27, 2021
+Kibana 7.12.0  March 23, 2021
+Kibana 7.11.2  March 10, 2021
+Kibana 7.11.1  February 17, 2021
+Kibana 7.11.0  February 10, 2021
+Kibana 7.10.2  January 14, 2021
+Kibana 7.10.1  December 09, 2020
+Kibana 7.10.0  November 11, 2020
+Kibana 7.9.3  October 22, 2020
+Kibana 7.9.2  September 24, 2020
+Kibana 7.9.1  September 03, 2020
+Kibana 7.9.0  August 18, 2020
+Kibana 7.8.1  July 27, 2020
+Kibana 7.8.0  June 18, 2020
+Kibana 7.7.1  June 03, 2020
+Kibana 7.7.0  May 13, 2020
+Kibana 7.6.2  March 31, 2020
+Kibana 7.6.1  March 04, 2020
+Kibana 7.6.0  February 11, 2020
+Kibana 7.5.2  January 21, 2020
+Kibana 7.5.1  December 18, 2019
+Kibana 7.5.0  December 02, 2019
+Kibana 7.4.2  October 31, 2019
+Kibana 7.4.1  October 23, 2019
+Kibana 7.4.0  October 01, 2019
+Kibana 7.3.2  September 12, 2019
+Kibana 7.3.1  August 22, 2019
+Kibana 7.3.0  July 31, 2019
+Kibana 7.2.1  July 30, 2019
+Kibana 7.2.0  June 25, 2019
+Kibana 7.1.1  May 28, 2019
+Kibana 7.1.0  May 20, 2019
+Kibana 7.0.1  May 01, 2019
+Kibana 7.0.0  April 10, 2019
+done
+

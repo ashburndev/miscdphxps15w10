@@ -1,0 +1,63 @@
+9:54 AM 5/22/2022
+
+Microsoft Windows [Version 10.0.19043.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>dir d:
+ Volume in drive D is SanDisk
+ Volume Serial Number is 6474-DBFC
+
+ Directory of D:\
+
+06/09/2021  02:53 AM    <DIR>          SanDiskSecureAccess
+11/03/2016  10:07 PM         8,600,360 SanDiskSecureAccessV3.01_win.exe
+               1 File(s)      8,600,360 bytes
+               1 Dir(s)  64,525,565,952 bytes free
+
+C:\Users\David Holberton>mkdir thumbdrive_for_ubuntu_2022.04
+
+C:\Users\David Holberton>dir thumbdrive_for_ubuntu_2022.04
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\thumbdrive_for_ubuntu_2022.04
+
+05/22/2022  09:53 AM    <DIR>          .
+05/22/2022  09:53 AM    <DIR>          ..
+05/22/2022  09:53 AM    <DIR>          SanDiskSecureAccess
+11/03/2016  10:07 PM         8,600,360 SanDiskSecureAccessV3.01_win.exe
+               1 File(s)      8,600,360 bytes
+               3 Dir(s)  93,198,942,208 bytes free
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>dir /o:gd /s d:\
+ Volume in drive D is SanDisk
+ Volume Serial Number is 6474-DBFC
+
+ Directory of d:\
+
+06/09/2021  02:53 AM    <DIR>          SanDiskSecureAccess
+11/03/2016  10:07 PM         8,600,360 SanDiskSecureAccessV3.01_win.exe
+               1 File(s)      8,600,360 bytes
+
+ Directory of d:\SanDiskSecureAccess
+
+06/09/2021  02:53 AM    <DIR>          ..
+06/09/2021  02:53 AM    <DIR>          .
+11/08/2016  03:40 AM           361,159 DownloadSanDiskSecureAccess_Mac.pdf
+11/08/2016  03:42 AM         2,681,165 SanDisk_SecureAccess_QSG.pdf
+               2 File(s)      3,042,324 bytes
+
+ Directory of d:\System Volume Information
+
+05/22/2022  09:49 AM                76 IndexerVolumeGuid
+05/22/2022  09:50 AM                12 WPSettings.dat
+               2 File(s)             88 bytes
+
+     Total Files Listed:
+               5 File(s)     11,642,772 bytes
+               3 Dir(s)  64,525,565,952 bytes free
+
+C:\Users\David Holberton>
+
+
