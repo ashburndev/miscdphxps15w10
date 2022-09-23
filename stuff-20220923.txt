@@ -1,0 +1,97 @@
+7:14 AM 9/23/2022
+
+https://www.jetbrains.com/idea/download/#section=windows
+    Version: 2022.2.2
+    Build: 222.4167.29
+    13 September 2022
+
+https://www.jetbrains.com/pycharm/download/#section=windows
+    Version: 2022.2.2
+    Build: 222.4167.33
+    14 September 2022
+
+https://www.jetbrains.com/ruby/download/#section=windows
+    Version: 2022.2.2
+    Build: 222.4167.28
+    18 September 2022
+
+https://code.visualstudio.com/download
+    Version 1.71 is now available! Read about the new features and fixes from August.
+
+https://www.eclipse.org/downloads/packages/
+    Eclipse IDE 2022-09 R Packages
+
+https://spring.io/tools
+    Spring Tools 4 for Eclipse
+    The all-new Spring Tool Suite 4. Free. Open source.
+
+https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack
+
+https://netbeans.apache.org/download/index.html
+    Latest version of the IDE, released on August 31, 2022.
+
+https://www.apache.org/dyn/closer.cgi/netbeans/netbeans/15/netbeans-15-bin.zip
+
+https://www.raspberrypi.com/software/
+https://www.raspberrypi.com/software/operating-systems/
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+09/20/2022  08:26 AM       181,334,641 jdk-18.0.2.1_windows-x64_bin.zip
+09/20/2022  08:26 AM                64 jdk-18.0.2.1_windows-x64_bin.zip.sha256
+09/20/2022  08:27 AM       160,901,280 jdk-18.0.2.1_windows-x64_bin.exe
+09/20/2022  08:27 AM                64 jdk-18.0.2.1_windows-x64_bin.exe.sha256
+09/20/2022  08:27 AM       159,727,616 jdk-18.0.2.1_windows-x64_bin.msi
+09/20/2022  08:28 AM                64 jdk-18.0.2.1_windows-x64_bin.msi.sha256
+09/20/2022  08:31 AM       180,159,099 jdk-17.0.4.1_windows-x64_bin.zip
+09/20/2022  08:31 AM                64 jdk-17.0.4.1_windows-x64_bin.zip.sha256
+09/20/2022  08:31 AM       160,205,472 jdk-17.0.4.1_windows-x64_bin.exe
+09/20/2022  08:32 AM                64 jdk-17.0.4.1_windows-x64_bin.exe.sha256
+09/20/2022  08:32 AM       159,031,296 jdk-17.0.4.1_windows-x64_bin.msi
+09/20/2022  08:32 AM                64 jdk-17.0.4.1_windows-x64_bin.msi.sha256
+09/20/2022  08:46 AM       147,378,880 jdk-11.0.16_windows-x64_bin.exe
+09/20/2022  08:46 AM       165,991,274 jdk-11.0.16_windows-x64_bin.zip
+09/20/2022  08:50 AM             7,629 11-0-16-checksum.html
+09/20/2022  08:56 AM       166,945,536 jdk-8u333-windows-i586.exe
+09/20/2022  08:56 AM       181,048,576 jdk-8u333-windows-x64.exe
+09/20/2022  08:57 AM            11,238 8u333checksum.html
+09/23/2022  07:17 AM       737,476,600 ideaIU-2022.2.2.exe
+09/23/2022  07:17 AM                86 ideaIU-2022.2.2.exe.sha256
+09/23/2022  07:18 AM     1,022,659,469 ideaIU-2022.2.2.win.zip
+09/23/2022  07:18 AM                90 ideaIU-2022.2.2.win.zip.sha256
+09/23/2022  07:18 AM       628,499,392 ideaIC-2022.2.2.exe
+09/23/2022  07:18 AM                86 ideaIC-2022.2.2.exe.sha256
+09/23/2022  07:19 AM       860,235,792 ideaIC-2022.2.2.win.zip
+09/23/2022  07:19 AM                90 ideaIC-2022.2.2.win.zip.sha256
+09/23/2022  07:22 AM       493,370,656 pycharm-professional-2022.2.2.exe
+09/23/2022  07:22 AM               100 pycharm-professional-2022.2.2.exe.sha256
+09/23/2022  07:22 AM       395,790,224 pycharm-community-2022.2.2.exe
+09/23/2022  07:23 AM                97 pycharm-community-2022.2.2.exe.sha256
+09/23/2022  07:23 AM       427,380,440 RubyMine-2022.2.2.exe
+09/23/2022  07:24 AM                88 RubyMine-2022.2.2.exe.sha256
+09/23/2022  07:24 AM       601,321,481 RubyMine-2022.2.2.win.zip
+09/23/2022  07:24 AM                92 RubyMine-2022.2.2.win.zip.sha256
+09/23/2022  07:27 AM        83,050,192 VSCodeUserSetup-x64-1.71.2.exe
+09/23/2022  07:27 AM        83,049,912 VSCodeSetup-x64-1.71.2.exe
+09/23/2022  07:27 AM       116,209,119 VSCode-win32-x64-1.71.2.zip
+09/23/2022  07:39 AM       526,527,070 eclipse-jee-2022-09-R-win32-x86_64.zip
+09/23/2022  07:40 AM               170 eclipse-jee-2022-09-R-win32-x86_64.zip.sha512
+09/23/2022  07:41 AM       309,865,828 eclipse-java-2022-09-R-win32-x86_64.zip
+09/23/2022  07:42 AM               171 eclipse-java-2022-09-R-win32-x86_64.zip.sha512
+09/23/2022  07:44 AM       600,722,077 spring-tool-suite-4-4.16.0.RELEASE-e4.25.0-win32.win32.x86_64.self-extracting.jar
+09/23/2022  07:48 AM       455,835,265 netbeans-15-bin.zip
+09/23/2022  07:49 AM               169 Apache-NetBeans-15-bin-windows-x64.exe.sha512
+09/23/2022  07:49 AM               866 netbeans-15-bin.zip.asc
+09/23/2022  07:51 AM        19,778,840 imager_1.7.3.exe
+09/23/2022  07:53 AM       934,445,948 2022-09-06-raspios-bullseye-armhf.img.xz
+09/23/2022  07:55 AM     2,860,855,144 2022-09-06-raspios-bullseye-armhf-full.img.xz
+09/23/2022  07:56 AM       354,181,108 2022-09-06-raspios-bullseye-armhf-lite.img.xz
+09/23/2022  07:57 AM       820,254,568 2022-09-06-raspios-bullseye-arm64.img.xz
+09/23/2022  07:57 AM       301,793,580 2022-09-06-raspios-bullseye-arm64-lite.img.xz
+09/23/2022  07:59 AM             1,794 2022-09-06-raspios-bullseye-armhf.txt
+09/23/2022  08:01 AM            34,355 2022-09-06-raspios-bullseye-armhf-release_notes.txt
+            1607 File(s) 146,131,319,449 bytes
+              45 Dir(s)  72,608,071,680 bytes free
+
+C:\Users\David Holberton\Downloads>
+
