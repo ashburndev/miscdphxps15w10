@@ -1,0 +1,385 @@
+6:56 AM 10/6/2022
+
+Microsoft Windows [Version 10.0.19044.2006]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.raspberrypi.com/software/
+https://www.raspberrypi.com/software/operating-systems/
+
+https://tika.apache.org/
+https://tika.apache.org/download.html
+https://tika.apache.org/2.5.0/gettingstarted.html
+
+Using Tika as a command line utility
+
+The Tika application jar (tika-app-*.jar) can be used as a command line utility for extracting text content and metadata from all sorts of files. This runnable jar contains all the dependencies it needs, so you don't need to worry about classpath settings to run it.
+
+The usage instructions are shown below.
+
+usage: java -jar tika-app.jar [option...] [file|port...]
+
+Options:
+    -?  or --help          Print this usage message
+    -v  or --verbose       Print debug level messages
+    -V  or --version       Print the Apache Tika version number
+
+    -g  or --gui           Start the Apache Tika GUI
+    -s  or --server        Start the Apache Tika server
+    -f  or --fork          Use Fork Mode for out-of-process extraction
+
+    --config=<tika-config.xml>
+        TikaConfig file. Must be specified before -g, -s, -f or the dump-x-config !
+    --dump-minimal-config  Print minimal TikaConfig
+    --dump-current-config  Print current TikaConfig
+    --dump-static-config   Print static config
+    --dump-static-full-config  Print static explicit config
+
+    -x  or --xml           Output XHTML content (default)
+    -h  or --html          Output HTML content
+    -t  or --text          Output plain text content
+    -T  or --text-main     Output plain text content (main content only)
+    -m  or --metadata      Output only metadata
+    -j  or --json          Output metadata in JSON
+    -y  or --xmp           Output metadata in XMP
+    -J  or --jsonRecursive Output metadata and content from all
+                           embedded files (choose content type
+                           with -x, -h, -t or -m; default is -x)
+    -l  or --language      Output only language
+    -d  or --detect        Detect document type
+           --digest=X      Include digest X (md2, md5, sha1,
+                               sha256, sha384, sha512
+    -eX or --encoding=X    Use output encoding X
+    -pX or --password=X    Use document password X
+    -z  or --extract       Extract all attachements into current directory
+    --extract-dir=<dir>    Specify target directory for -z
+    -r  or --pretty-print  For JSON, XML and XHTML outputs, adds newlines and
+                           whitespace, for better readability
+
+    --list-parsers
+         List the available document parsers
+    --list-parser-details
+         List the available document parsers and their supported mime types
+    --list-parser-details-apt
+         List the available document parsers and their supported mime types in apt format.
+    --list-detectors
+         List the available document detectors
+    --list-met-models
+         List the available metadata models, and their supported keys
+    --list-supported-types
+         List all known media types and related information
+
+
+    --compare-file-magic=<dir>
+         Compares Tika's known media types to the File(1) tool's magic directory
+
+Description:
+    Apache Tika will parse the file(s) specified on the
+    command line and output the extracted text content
+    or metadata to standard output.
+
+    Instead of a file name you can also specify the URL
+    of a document to be parsed.
+
+    If no file name or URL is specified (or the special
+    name "-" is used), then the standard input stream
+    is parsed. If no arguments were given and no input
+    data is available, the GUI is started instead.
+
+- GUI mode
+
+    Use the "--gui" (or "-g") option to start the
+    Apache Tika GUI. You can drag and drop files from
+    a normal file explorer to the GUI window to extract
+    text content and metadata from the files.
+
+- Batch mode
+
+    Simplest method.
+    Specify two directories as args with no other args:
+         java -jar tika-app.jar <inputDirectory> <outputDirectory>
+
+
+Batch Options:
+    -i  or --inputDir          Input directory
+    -o  or --outputDir         Output directory
+    -numConsumers              Number of processing threads
+    -bc                        Batch config file
+    -maxRestarts               Maximum number of times the
+                               watchdog process will restart the child process.
+    -timeoutThresholdMillis    Number of milliseconds allowed to a parse
+                               before the process is killed and restarted
+    -fileList                  List of files to process, with
+                               paths relative to the input directory
+    -includeFilePat            Regular expression to determine which
+                               files to process, e.g. "(?i)\.pdf"
+    -excludeFilePat            Regular expression to determine which
+                               files to avoid processing, e.g. "(?i)\.pdf"
+    -maxFileSizeBytes          Skip files longer than this value
+
+    Control the type of output with -x, -h, -t and/or -J.
+
+    To modify child process jvm args, prepend "J" as in:
+    -JXmx4g or -JDlog4j.configuration=file:log4j.xml.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+09/20/2022  08:26 AM       181,334,641 jdk-18.0.2.1_windows-x64_bin.zip
+09/20/2022  08:26 AM                64 jdk-18.0.2.1_windows-x64_bin.zip.sha256
+09/20/2022  08:27 AM       160,901,280 jdk-18.0.2.1_windows-x64_bin.exe
+09/20/2022  08:27 AM                64 jdk-18.0.2.1_windows-x64_bin.exe.sha256
+09/20/2022  08:27 AM       159,727,616 jdk-18.0.2.1_windows-x64_bin.msi
+09/20/2022  08:28 AM                64 jdk-18.0.2.1_windows-x64_bin.msi.sha256
+09/20/2022  08:31 AM       180,159,099 jdk-17.0.4.1_windows-x64_bin.zip
+09/20/2022  08:31 AM                64 jdk-17.0.4.1_windows-x64_bin.zip.sha256
+09/20/2022  08:31 AM       160,205,472 jdk-17.0.4.1_windows-x64_bin.exe
+09/20/2022  08:32 AM                64 jdk-17.0.4.1_windows-x64_bin.exe.sha256
+09/20/2022  08:32 AM       159,031,296 jdk-17.0.4.1_windows-x64_bin.msi
+09/20/2022  08:32 AM                64 jdk-17.0.4.1_windows-x64_bin.msi.sha256
+09/20/2022  08:46 AM       147,378,880 jdk-11.0.16_windows-x64_bin.exe
+09/20/2022  08:46 AM       165,991,274 jdk-11.0.16_windows-x64_bin.zip
+09/20/2022  08:50 AM             7,629 11-0-16-checksum.html
+09/20/2022  08:56 AM       166,945,536 jdk-8u333-windows-i586.exe
+09/20/2022  08:56 AM       181,048,576 jdk-8u333-windows-x64.exe
+09/20/2022  08:57 AM            11,238 8u333checksum.html
+09/23/2022  07:17 AM       737,476,600 ideaIU-2022.2.2.exe
+09/23/2022  07:17 AM                86 ideaIU-2022.2.2.exe.sha256
+09/23/2022  07:18 AM     1,022,659,469 ideaIU-2022.2.2.win.zip
+09/23/2022  07:18 AM                90 ideaIU-2022.2.2.win.zip.sha256
+09/23/2022  07:18 AM       628,499,392 ideaIC-2022.2.2.exe
+09/23/2022  07:18 AM                86 ideaIC-2022.2.2.exe.sha256
+09/23/2022  07:19 AM       860,235,792 ideaIC-2022.2.2.win.zip
+09/23/2022  07:19 AM                90 ideaIC-2022.2.2.win.zip.sha256
+09/23/2022  07:22 AM       493,370,656 pycharm-professional-2022.2.2.exe
+09/23/2022  07:22 AM               100 pycharm-professional-2022.2.2.exe.sha256
+09/23/2022  07:22 AM       395,790,224 pycharm-community-2022.2.2.exe
+09/23/2022  07:23 AM                97 pycharm-community-2022.2.2.exe.sha256
+09/23/2022  07:23 AM       427,380,440 RubyMine-2022.2.2.exe
+09/23/2022  07:24 AM                88 RubyMine-2022.2.2.exe.sha256
+09/23/2022  07:24 AM       601,321,481 RubyMine-2022.2.2.win.zip
+09/23/2022  07:24 AM                92 RubyMine-2022.2.2.win.zip.sha256
+09/23/2022  07:27 AM        83,050,192 VSCodeUserSetup-x64-1.71.2.exe
+09/23/2022  07:27 AM        83,049,912 VSCodeSetup-x64-1.71.2.exe
+09/23/2022  07:27 AM       116,209,119 VSCode-win32-x64-1.71.2.zip
+09/23/2022  07:39 AM       526,527,070 eclipse-jee-2022-09-R-win32-x86_64.zip
+09/23/2022  07:40 AM               170 eclipse-jee-2022-09-R-win32-x86_64.zip.sha512
+09/23/2022  07:41 AM       309,865,828 eclipse-java-2022-09-R-win32-x86_64.zip
+09/23/2022  07:42 AM               171 eclipse-java-2022-09-R-win32-x86_64.zip.sha512
+09/23/2022  07:44 AM       600,722,077 spring-tool-suite-4-4.16.0.RELEASE-e4.25.0-win32.win32.x86_64.self-extracting.jar
+09/23/2022  07:48 AM       455,835,265 netbeans-15-bin.zip
+09/23/2022  07:49 AM               169 Apache-NetBeans-15-bin-windows-x64.exe.sha512
+09/23/2022  07:49 AM               866 netbeans-15-bin.zip.asc
+09/23/2022  07:51 AM        19,778,840 imager_1.7.3.exe
+09/23/2022  07:53 AM       934,445,948 2022-09-06-raspios-bullseye-armhf.img.xz
+09/23/2022  07:55 AM     2,860,855,144 2022-09-06-raspios-bullseye-armhf-full.img.xz
+09/23/2022  07:56 AM       354,181,108 2022-09-06-raspios-bullseye-armhf-lite.img.xz
+09/23/2022  07:57 AM       820,254,568 2022-09-06-raspios-bullseye-arm64.img.xz
+09/23/2022  07:57 AM       301,793,580 2022-09-06-raspios-bullseye-arm64-lite.img.xz
+09/23/2022  07:59 AM             1,794 2022-09-06-raspios-bullseye-armhf.txt
+09/23/2022  08:01 AM            34,355 2022-09-06-raspios-bullseye-armhf-release_notes.txt
+10/06/2022  07:06 AM       937,267,656 2022-09-22-raspios-bullseye-armhf.img.xz
+10/06/2022  07:09 AM                66 2022-09-22-raspios-bullseye-armhf.img.xz.sha256
+10/06/2022  07:11 AM     2,831,677,672 2022-09-22-raspios-bullseye-armhf-full.img.xz
+10/06/2022  07:12 AM                66 2022-09-22-raspios-bullseye-armhf-full.img.xz.sha256
+10/06/2022  07:12 AM       354,404,132 2022-09-22-raspios-bullseye-armhf-lite.img.xz
+10/06/2022  07:13 AM                66 2022-09-22-raspios-bullseye-armhf-lite.img.xz.sha256
+10/06/2022  07:14 AM       821,326,852 2022-09-22-raspios-bullseye-arm64.img.xz
+10/06/2022  07:15 AM                66 2022-09-22-raspios-bullseye-arm64.img.xz.sha256
+10/06/2022  07:15 AM       302,978,228 2022-09-22-raspios-bullseye-arm64-lite.img.xz
+10/06/2022  07:16 AM                66 2022-09-22-raspios-bullseye-arm64-lite.img.xz.sha256
+10/06/2022  07:20 AM             2,351 2022-09-22-raspios-bullseye-armhf.txt
+10/06/2022  07:22 AM            35,096 2022-09-22-raspios-bullseye-armhf-release_notes.txt
+10/06/2022  07:26 AM       149,336,291 tika-2.5.0-src.zip
+10/06/2022  07:26 AM               833 tika-2.5.0-src.zip.asc
+10/06/2022  07:26 AM               129 tika-2.5.0-src.zip.sha512
+10/06/2022  07:27 AM        52,475,192 tika-app-2.5.0.jar
+10/06/2022  07:27 AM               833 tika-app-2.5.0.jar.asc
+10/06/2022  07:27 AM               129 tika-app-2.5.0.jar.sha512
+10/06/2022  07:28 AM        61,806,712 tika-server-standard-2.5.0.jar
+10/06/2022  07:28 AM               833 tika-server-standard-2.5.0.jar.asc
+10/06/2022  07:28 AM               129 tika-server-standard-2.5.0.jar.sha512
+10/06/2022  07:28 AM        55,134,985 tika-server-standard-2.5.0-bin.zip
+10/06/2022  07:29 AM               833 tika-server-standard-2.5.0-bin.zip.asc
+10/06/2022  07:29 AM               129 tika-server-standard-2.5.0-bin.zip.sha512
+10/06/2022  07:30 AM        88,597,223 tika-eval-app-2.5.0.jar
+10/06/2022  07:30 AM               833 tika-eval-app-2.5.0.jar.asc
+10/06/2022  07:30 AM               129 tika-eval-app-2.5.0.jar.sha512
+10/06/2022  07:30 AM        27,857,681 tika-parser-scientific-package-2.5.0.jar
+10/06/2022  07:31 AM               833 tika-parser-scientific-package-2.5.0.jar.asc
+10/06/2022  07:31 AM               129 tika-parser-scientific-package-2.5.0.jar.sha512
+10/06/2022  07:31 AM        12,744,905 tika-parser-sqlite3-package-2.5.0.jar
+10/06/2022  07:33 AM               833 tika-parser-sqlite3-package-2.5.0.jar.asc
+10/06/2022  07:33 AM               129 tika-parser-sqlite3-package-2.5.0.jar.sha512
+10/06/2022  08:02 AM            51,078 GettysburgAddress.docx
+            1641 File(s) 151,827,022,567 bytes
+              45 Dir(s)  78,236,311,552 bytes free
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+certutil -hashfile tika-server-standard-2.5.0.jar SHA512
+type tika-server-standard-2.5.0.jar.sha512
+java -version
+java -jar tika-server-standard-2.5.0.jar
+
+C:\Users\David Holberton\Downloads>certutil -hashfile tika-server-standard-2.5.0.jar SHA512
+SHA512 hash of tika-server-standard-2.5.0.jar:
+c00167d86a58f58366050d5c2dfefd2945c497c7c86a751307e3f5f40b8fca64f5837dfc2505513e0cae01f683a19a3009e626de48250749a209dcfe3479d1c4
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type tika-server-standard-2.5.0.jar.sha512
+c00167d86a58f58366050d5c2dfefd2945c497c7c86a751307e3f5f40b8fca64f5837dfc2505513e0cae01f683a19a3009e626de48250749a209dcfe3479d1c4
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>java -version
+java version "1.8.0_331"
+Java(TM) SE Runtime Environment (build 1.8.0_331-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.331-b09, mixed mode)
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>java -jar tika-server-standard-2.5.0.jar
+INFO  [main] 07:47:06,932 org.apache.tika.server.core.TikaServerProcess Starting Apache Tika 2.5.0 server
+INFO  [main] 07:47:07,344 org.apache.tika.server.core.TikaServerProcess loading resource from SPI: class org.apache.tika.server.standard.resource.XMPMetadataResource
+Oct 06, 2022 7:47:07 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:9998/
+INFO  [main] 07:47:07,596 org.eclipse.jetty.util.log Logging initialized @1691ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [main] 07:47:07,663 org.eclipse.jetty.server.Server jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 1.8.0_331-b09
+INFO  [main] 07:47:07,703 org.eclipse.jetty.server.AbstractConnector Started ServerConnector@66b7550d{HTTP/1.1, (http/1.1)}{localhost:9998}
+INFO  [main] 07:47:07,703 org.eclipse.jetty.server.Server Started @1799ms
+WARN  [main] 07:47:07,713 org.eclipse.jetty.server.handler.ContextHandler Empty contextPath
+INFO  [main] 07:47:07,729 org.eclipse.jetty.server.handler.ContextHandler Started o.e.j.s.h.ContextHandler@60d1a32f{/,null,AVAILABLE}
+INFO  [main] 07:47:07,746 org.apache.tika.server.core.TikaServerProcess Started Apache Tika server 33468d69-5097-4fcf-9a06-7f156401b2a5 at http://localhost:9998/
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+usage: java -jar tika-app.jar [option...] [file|port...]
+
+java -jar tika-server-standard-2.5.0.jar -h GettysburgAddress.docx
+java -jar tika-server-standard-2.5.0.jar --html "C:\Users\David Holberton\GettysburgAddress.docx"
+java -jar tika-server-standard-2.5.0.jar --text "C:\Users\David Holberton\GettysburgAddress.docx"
+java -jar tika-server-standard-2.5.0.jar --metadata "C:\Users\David Holberton\GettysburgAddress.docx"
+
+java -jar tika-app-2.5.0.jar -h GettysburgAddress.docx
+java -jar tika-app-2.5.0.jar --html GettysburgAddress.docx > GettysburgAddress.html
+java -jar tika-app-2.5.0.jar --text GettysburgAddress.docx > GettysburgAddress.text
+java -jar tika-app-2.5.0.jar --json GettysburgAddress.docx > GettysburgAddress.json
+java -jar tika-app-2.5.0.jar --metadata GettysburgAddress.docx > GettysburgAddress.metadata.text
+java -jar tika-app-2.5.0.jar --json --pretty-print GettysburgAddress.docx
+
+
+C:\Users\David Holberton\Downloads>java -jar tika-server-standard-2.5.0.jar -h GettysburgAddress.docx
+INFO  [main] 08:15:57,385 org.apache.tika.server.core.TikaServerProcess Starting Apache Tika 2.5.0 server
+INFO  [main] 08:15:57,778 org.apache.tika.server.core.TikaServerProcess loading resource from SPI: class org.apache.tika.server.standard.resource.XMPMetadataResource
+Oct 06, 2022 8:15:58 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://GettysburgAddress.docx:9998/
+INFO  [main] 08:15:58,067 org.eclipse.jetty.util.log Logging initialized @1672ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [main] 08:15:58,147 org.eclipse.jetty.server.Server jetty-9.4.49.v20220914; built: 2022-09-14T01:07:36.601Z; git: 4231a3b2e4cb8548a412a789936d640a97b1aa0a; jvm 1.8.0_331-b09
+Oct 06, 2022 8:15:58 AM org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine addServant
+SEVERE: Could not start Jetty server on port 9,998: Failed to bind to GettysburgAddress.docx:9998
+INFO  [main] 08:15:58,201 org.eclipse.jetty.server.AbstractConnector Stopped ServerConnector@66b7550d{HTTP/1.1, (http/1.1)}{GettysburgAddress.docx:9998}
+WARN  [main] 08:15:58,204 org.apache.tika.server.core.TikaServerProcess exception starting server
+org.apache.cxf.service.factory.ServiceConstructionException: null
+        at org.apache.cxf.jaxrs.JAXRSServerFactoryBean.create(JAXRSServerFactoryBean.java:220) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.tika.server.core.TikaServerProcess.startServer(TikaServerProcess.java:157) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.tika.server.core.TikaServerProcess.main(TikaServerProcess.java:135) ~[tika-server-standard-2.5.0.jar:2.5.0]
+Caused by: org.apache.cxf.interceptor.Fault: Could not start Jetty server on port 9,998: Failed to bind to GettysburgAddress.docx:9998
+        at org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine.addServant(JettyHTTPServerEngine.java:488) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.cxf.transport.http_jetty.JettyHTTPDestination.activate(JettyHTTPDestination.java:187) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.cxf.transport.AbstractObservable.setMessageObserver(AbstractObservable.java:53) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.cxf.binding.AbstractBindingFactory.addListener(AbstractBindingFactory.java:95) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.cxf.jaxrs.JAXRSBindingFactory.addListener(JAXRSBindingFactory.java:91) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.cxf.endpoint.ServerImpl.start(ServerImpl.java:130) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        at org.apache.cxf.jaxrs.JAXRSServerFactoryBean.create(JAXRSServerFactoryBean.java:208) ~[tika-server-standard-2.5.0.jar:2.5.0]
+        ... 2 more
+Caused by: java.io.IOException: Failed to bind to GettysburgAddress.docx:9998
+
+10/06/2022  07:26 AM       149,336,291 tika-2.5.0-src.zip
+10/06/2022  07:26 AM               833 tika-2.5.0-src.zip.asc
+10/06/2022  07:26 AM               129 tika-2.5.0-src.zip.sha512
+10/06/2022  07:27 AM        52,475,192 tika-app-2.5.0.jar
+10/06/2022  07:27 AM               833 tika-app-2.5.0.jar.asc
+10/06/2022  07:27 AM               129 tika-app-2.5.0.jar.sha512
+10/06/2022  07:28 AM        61,806,712 tika-server-standard-2.5.0.jar
+10/06/2022  07:28 AM               833 tika-server-standard-2.5.0.jar.asc
+10/06/2022  07:28 AM               129 tika-server-standard-2.5.0.jar.sha512
+10/06/2022  07:28 AM        55,134,985 tika-server-standard-2.5.0-bin.zip
+10/06/2022  07:29 AM               833 tika-server-standard-2.5.0-bin.zip.asc
+10/06/2022  07:29 AM               129 tika-server-standard-2.5.0-bin.zip.sha512
+10/06/2022  07:30 AM        88,597,223 tika-eval-app-2.5.0.jar
+10/06/2022  07:30 AM               833 tika-eval-app-2.5.0.jar.asc
+10/06/2022  07:30 AM               129 tika-eval-app-2.5.0.jar.sha512
+10/06/2022  07:30 AM        27,857,681 tika-parser-scientific-package-2.5.0.jar
+10/06/2022  07:31 AM               833 tika-parser-scientific-package-2.5.0.jar.asc
+10/06/2022  07:31 AM               129 tika-parser-scientific-package-2.5.0.jar.sha512
+10/06/2022  07:31 AM        12,744,905 tika-parser-sqlite3-package-2.5.0.jar
+10/06/2022  07:33 AM               833 tika-parser-sqlite3-package-2.5.0.jar.asc
+10/06/2022  07:33 AM               129 tika-parser-sqlite3-package-2.5.0.jar.sha512
+10/06/2022  08:02 AM            51,078 GettysburgAddress.docx
+10/06/2022  08:28 AM             6,855 GettysburgAddress.html
+10/06/2022  08:29 AM             3,157 GettysburgAddress.text
+10/06/2022  08:31 AM               874 GettysburgAddress.metadata.text
+10/06/2022  08:33 AM               906 GettysburgAddress.json
+            1645 File(s) 151,827,034,359 bytes
+              45 Dir(s)  78,107,615,232 bytes free
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>type GettysburgAddress.metadata.text
+Content-Length: 51078
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+X-TIKA:Parsed-By: org.apache.tika.parser.DefaultParser
+X-TIKA:Parsed-By: org.apache.tika.parser.microsoft.ooxml.OOXMLParser
+cp:revision: 2
+dc:creator: David Holberton
+dc:publisher:
+dcterms:created: 2022-10-06T11:56:00Z
+dcterms:modified: 2022-10-06T12:02:00Z
+extended-properties:AppVersion: 16.0000
+extended-properties:Application: Microsoft Office Word
+extended-properties:Company:
+extended-properties:DocSecurityString: None
+extended-properties:Template: Normal.dotm
+extended-properties:TotalTime: 4
+meta:character-count: 4589
+meta:character-count-with-spaces: 5384
+meta:last-author: David Holberton
+meta:line-count: 38
+meta:page-count: 2
+meta:paragraph-count: 10
+meta:word-count: 805
+resourceName: GettysburgAddress.docx
+xmpTPg:NPages: 2
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>java -jar tika-app-2.5.0.jar --json --pretty-print GettysburgAddress.docx
+{
+  "Content-Length" : "51078",
+  "Content-Type" : "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "X-TIKA:Parsed-By" : [ "org.apache.tika.parser.DefaultParser", "org.apache.tika.parser.microsoft.ooxml.OOXMLParser" ],
+  "cp:revision" : "2",
+  "dc:creator" : "David Holberton",
+  "dc:publisher" : "",
+  "dcterms:created" : "2022-10-06T11:56:00Z",
+  "dcterms:modified" : "2022-10-06T12:02:00Z",
+  "extended-properties:AppVersion" : "16.0000",
+  "extended-properties:Application" : "Microsoft Office Word",
+  "extended-properties:Company" : "",
+  "extended-properties:DocSecurityString" : "None",
+  "extended-properties:Template" : "Normal.dotm",
+  "extended-properties:TotalTime" : "4",
+  "meta:character-count" : "4589",
+  "meta:character-count-with-spaces" : "5384",
+  "meta:last-author" : "David Holberton",
+  "meta:line-count" : "38",
+  "meta:page-count" : "2",
+  "meta:paragraph-count" : "10",
+  "meta:word-count" : "805",
+  "resourceName" : "GettysburgAddress.docx",
+  "xmpTPg:NPages" : "2"
+}
+C:\Users\David Holberton\Downloads>
+
