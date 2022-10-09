@@ -1,0 +1,181 @@
+6:52 AM 3/28/2021
+
+03/28/2021  06:31 AM     3,007,638,235 2021-03-04-raspios-buster-armhf-full.zip
+03/28/2021  06:33 AM                66 2021-03-04-raspios-buster-armhf-full.zip.sha256
+03/28/2021  06:34 AM     1,231,874,816 2021-03-04-raspios-buster-armhf.zip
+03/28/2021  06:35 AM                66 2021-03-04-raspios-buster-armhf.zip.sha256
+03/28/2021  06:36 AM       463,405,209 2021-03-04-raspios-buster-armhf-lite.zip
+03/28/2021  06:37 AM                66 2021-03-04-raspios-buster-armhf-lite.zip.sha256
+03/28/2021  06:38 AM            33,517 2021-03-04-raspios-buster-armhf-release-notes.txt
+03/28/2021  06:41 AM        19,762,296 imager_1.6.exe
+
+
+certutil -hashfile 2021-03-04-raspios-buster-armhf-full.zip SHA256
+type               2021-03-04-raspios-buster-armhf-full.zip.sha256
+
+certutil -hashfile 2021-03-04-raspios-buster-armhf.zip SHA256
+type               2021-03-04-raspios-buster-armhf.zip.sha256
+
+certutil -hashfile 2021-03-04-raspios-buster-armhf-lite.zip SHA256
+type               2021-03-04-raspios-buster-armhf-lite.zip.sha256
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile 2021-03-04-raspios-buster-armhf-full.zip SHA256
+SHA256 hash of 2021-03-04-raspios-buster-armhf-full.zip:
+c0256f411cbb39d2c5a41d68832cfada4c053689c059ded1ff660803e9fc8891
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type               2021-03-04-raspios-buster-armhf-full.zip.sha256
+c0256f411cbb39d2c5a41d68832cfada4c053689c059ded1ff660803e9fc8891
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile 2021-03-04-raspios-buster-armhf.zip SHA256
+SHA256 hash of 2021-03-04-raspios-buster-armhf.zip:
+d3de1a33d2d4f4990345b6369960b04c70b577519e6f25f4d7ec601e305e932a
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type               2021-03-04-raspios-buster-armhf.zip.sha256
+d3de1a33d2d4f4990345b6369960b04c70b577519e6f25f4d7ec601e305e932a
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile 2021-03-04-raspios-buster-armhf-lite.zip SHA256
+SHA256 hash of 2021-03-04-raspios-buster-armhf-lite.zip:
+ea92412af99ec145438ddec3c955aa65e72ef88d84f3307cea474da005669d39
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type               2021-03-04-raspios-buster-armhf-lite.zip.sha256
+ea92412af99ec145438ddec3c955aa65e72ef88d84f3307cea474da005669d39
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads\rpitemp>
+C:\Users\David Holberton\Downloads\rpitemp>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\rpitemp
+
+03/28/2021  07:06 AM    <DIR>          ..
+03/28/2021  07:06 AM    <DIR>          .
+12/02/2020  09:21 AM     8,787,066,880 2020-12-02-raspios-buster-armhf-full.img
+01/11/2021  09:32 AM     8,602,517,504 2021-01-11-raspios-buster-armhf-full.img
+03/04/2021  07:27 PM     8,610,906,112 2021-03-04-raspios-buster-armhf-full.img
+               3 File(s) 26,000,490,496 bytes
+               2 Dir(s)  25,247,051,776 bytes free
+
+C:\Users\David Holberton\Downloads\rpitemp>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://ubuntu.com/download/raspberry-pi
+ Run this command in your terminal in the directory the iso was downloaded to verify the SHA256 checksum:
+echo "2fa19fb53fe0144549ff722d9cd755d9c12fb508bb890926bfe7940c0b3555e8 *ubuntu-20.10-preinstalled-desktop-arm64+raspi.img.xz" | shasum -a 256 --check
+
+You should get the following output:
+ubuntu-20.10-preinstalled-server-desktop-arm64+raspi.iso: OK
+
+Or follow this tutorial to learn how to verify downloads 
+
+
+certutil -hashfile "ubuntu-20.10-preinstalled-desktop-arm64+raspi.img.xz" SHA256
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile "ubuntu-20.10-preinstalled-desktop-arm64+raspi.img.xz" SHA256
+SHA256 hash of ubuntu-20.10-preinstalled-desktop-arm64+raspi.img.xz:
+2fa19fb53fe0144549ff722d9cd755d9c12fb508bb890926bfe7940c0b3555e8
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>dir /o:gd *ubuntu*
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads
+
+11/05/2017  11:53 AM    <DIR>          ubuntu-16.04.3
+11/05/2017  12:07 PM    <DIR>          ubuntu-17.10
+04/26/2020  11:01 AM     2,715,254,784 ubuntu-20.04-desktop-amd64.iso
+04/26/2020  11:51 AM               198 ubuntu-20.04-desktop-amd64.iso.SHA256SUMS.txt
+04/26/2020  11:51 AM               819 ubuntu-20.04-desktop-amd64.iso.SHA256SUMS.gpg
+10/26/2020  07:23 AM     2,785,017,856 ubuntu-20.04.1-desktop-amd64.iso
+10/26/2020  07:25 AM     2,942,003,200 ubuntu-20.10-desktop-amd64.iso
+10/26/2020  07:26 AM     2,193,522,688 ubuntu-18.04.5-desktop-amd64.iso
+10/26/2020  07:27 AM               202 ubuntu-18.04.5-SHASUMS.txt
+10/26/2020  07:30 AM     1,676,877,588 ubuntu-20.10-preinstalled-desktop-arm64+raspi.img.xz
+10/26/2020  07:34 AM               392 ubuntu-16.04.7-SHA256SUMS.txt
+10/26/2020  07:42 AM     1,697,906,688 ubuntu-16.04.7-desktop-amd64.iso
+11/14/2020  01:58 PM               202 ubuntu-20.04.1-desktop-amd64.iso.SHA256SUMS.txt
+11/14/2020  01:59 PM               833 ubuntu-20.04.1-desktop-amd64.iso.SHA256SUMS.gpg
+11/14/2020  02:07 PM               198 ubuntu-20.10-desktop-amd64.iso.SHA256SUMS.txt
+11/14/2020  02:07 PM               833 ubuntu-20.10-desktop-amd64.iso.SHA256SUMS.gpg
+              14 File(s) 14,010,586,481 bytes
+               2 Dir(s)  23,549,149,184 bytes free
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads\rpitemp>
+C:\Users\David Holberton\Downloads\rpitemp>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\rpitemp
+
+03/28/2021  07:38 AM    <DIR>          ..
+03/28/2021  07:38 AM    <DIR>          .
+10/26/2020  07:30 AM     1,676,877,588 ubuntu-20.10-preinstalled-desktop-arm64+raspi.img.xz
+10/26/2020  07:30 AM     8,750,736,384 ubuntu-20.10-preinstalled-desktop-arm64+raspi.img
+12/02/2020  09:21 AM     8,787,066,880 2020-12-02-raspios-buster-armhf-full.img
+01/11/2021  09:32 AM     8,602,517,504 2021-01-11-raspios-buster-armhf-full.img
+03/04/2021  07:27 PM     8,610,906,112 2021-03-04-raspios-buster-armhf-full.img
+03/28/2021  06:41 AM        19,762,296 imager_1.6.exe
+               6 File(s) 36,447,866,764 bytes
+               2 Dir(s)  14,794,637,312 bytes free
+
+C:\Users\David Holberton\Downloads\rpitemp>
+C:\Users\David Holberton\Downloads\rpitemp>dir /o:gd "\Program Files (x86)\Raspberry Pi Imager"
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Program Files (x86)\Raspberry Pi Imager
+
+05/22/2020  02:41 PM    <DIR>          styles
+05/22/2020  02:41 PM    <DIR>          QtQuick.2
+05/22/2020  02:41 PM    <DIR>          QtQuick
+05/22/2020  02:41 PM    <DIR>          QtGraphicalEffects
+05/22/2020  02:41 PM    <DIR>          Qt
+05/22/2020  02:41 PM    <DIR>          qmltooling
+05/22/2020  02:41 PM    <DIR>          platforms
+05/22/2020  02:41 PM    <DIR>          imageformats
+05/22/2020  02:41 PM    <DIR>          iconengines
+05/22/2020  02:41 PM    <DIR>          bearer
+03/28/2021  07:08 AM    <DIR>          .
+03/28/2021  07:08 AM    <DIR>          ..
+03/11/2014  06:54 AM         3,466,856 D3Dcompiler_47.dll
+01/02/2020  02:06 AM         8,400,976 Qt5Core.dll
+01/02/2020  02:06 AM         9,908,216 Qt5Gui.dll
+01/02/2020  02:06 AM         2,765,376 Qt5Network.dll
+01/02/2020  02:06 AM         9,127,376 Qt5Widgets.dll
+01/02/2020  02:06 AM         7,789,416 libGLESV2.dll
+01/02/2020  02:06 AM            67,128 libEGL.dll
+01/02/2020  02:08 AM           626,288 Qt5Svg.dll
+01/02/2020  02:24 AM         6,692,960 Qt5Qml.dll
+01/02/2020  02:24 AM         8,436,568 Qt5Quick.dll
+01/02/2020  02:24 AM         1,093,720 Qt5QmlModels.dll
+01/02/2020  02:24 AM           132,344 Qt5QmlWorkerScript.dll
+01/02/2020  02:39 AM           440,272 Qt5WinExtras.dll
+01/02/2020  02:40 AM         2,123,568 Qt5QuickTemplates2.dll
+01/02/2020  02:40 AM           386,200 Qt5QuickControls2.dll
+06/02/2020  04:35 AM           121,128 libgcc_s_dw2-1.dll
+06/02/2020  04:35 AM         1,549,608 libstdc++-6.dll
+06/02/2020  04:35 AM            54,552 libwinpthread-1.dll
+02/26/2021  10:35 AM            89,152 license.txt
+02/26/2021  10:35 AM           787,072 libssl-1_1.dll
+02/26/2021  10:35 AM         3,422,128 libcrypto-1_1.dll
+02/26/2021  10:35 AM         2,260,392 rpi-imager.exe
+02/26/2021  10:35 AM            71,608 fat32format.exe
+02/26/2021  10:36 AM           153,432 uninstall.exe
+              24 File(s)     69,966,336 bytes
+              12 Dir(s)  14,794,637,312 bytes free
+
+C:\Users\David Holberton\Downloads\rpitemp>
+C:\Users\David Holberton\Downloads\rpitemp>
+

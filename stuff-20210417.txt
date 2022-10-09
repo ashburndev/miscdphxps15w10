@@ -1,0 +1,83 @@
+12:21 PM 4/17/2021
+
+C:\Users\David Holberton\g2mguides\creating-your-first-grails-app\complete>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\g2mguides\creating-your-first-grails-app\complete
+
+04/16/2021  07:49 AM    <DIR>          .
+04/16/2021  07:49 AM    <DIR>          ..
+04/16/2021  07:49 AM               100 .gitignore
+04/16/2021  07:49 AM             3,109 build.gradle
+04/16/2021  07:49 AM    <DIR>          config
+04/16/2021  07:49 AM    <DIR>          docs
+04/16/2021  07:49 AM    <DIR>          gradle
+04/16/2021  07:49 AM               107 gradle.properties
+04/16/2021  07:49 AM             5,131 gradlew
+04/16/2021  07:49 AM             2,404 gradlew.bat
+04/16/2021  07:49 AM    <DIR>          grails-app
+04/16/2021  07:49 AM             5,463 grails-wrapper.jar
+04/16/2021  07:49 AM             4,824 grailsw
+04/16/2021  07:49 AM             2,375 grailsw.bat
+04/16/2021  07:49 AM                47 settings.gradle
+04/16/2021  07:49 AM    <DIR>          src
+               9 File(s)         23,560 bytes
+               7 Dir(s)  36,903,776,256 bytes free
+
+C:\Users\David Holberton\g2mguides\creating-your-first-grails-app\complete>type .gitignore
+Thumbs.db
+.DS_Store
+.gradle
+build/
+.idea
+*.iml
+*.ipr
+*.iws
+.project
+.settings
+.classpath
+
+C:\Users\David Holberton\g2mguides\creating-your-first-grails-app\complete>code .
+
+C:\Users\David Holberton\g2mguides\creating-your-first-grails-app\complete>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://netbeans.apache.org/download/index.html
+https://netbeans.apache.org/download/nb123/index.html
+
+http://grails.org/download.html
+
+
+
+java.util.Base64
+
+http://commons.apache.org/proper/commons-codec/
+http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/binary/Base32.html
+
+http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/binary/Base32.html
+
+https://stackoverflow.com/questions/5060921/in-java-how-do-you-convert-a-decimal-number-to-base-36
+
+https://stackoverflow.com/questions/5060921/in-java-how-do-you-convert-a-decimal-number-to-base-36
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#digit-char-int-
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#digit-char-int-
+
+https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html#BigInteger-java.lang.String-int-
+
+
+https://stackoverflow.com/questions/5067417/in-java-how-do-you-convert-a-base-36-number-to-a-decimal-number
+
+Long.valueOf("YPAYPA", 36).toString();
+
+https://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#valueOf(java.lang.String,%20int)
+
+https://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#parseLong(java.lang.String,%20int)
+
+https://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#toString(long,%20int)
+
+https://docs.oracle.com/javase/6/docs/api/java/lang/Long.html#valueOf(java.lang.String,%20int)
+

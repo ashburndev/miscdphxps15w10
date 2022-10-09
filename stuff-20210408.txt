@@ -1,0 +1,52 @@
+6:15 PM 4/8/2021
+
+https://www.google.com/search?client=firefox-b-1-d&q=intellij+download
+
+https://code.visualstudio.com/download
+https://code.visualstudio.com/docs/languages/java
+https://code.visualstudio.com/docs/java/extensions
+https://code.visualstudio.com/docs/java/java-tutorial
+https://code.visualstudio.com/docs/java/java-debugging
+
+https://marketplace.visualstudio.com/items?itemName=redhat.java
+https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
+https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack&utm_source=www.vsixhub.com
+
+https://github.com/redhat-developer/vscode-java/wiki
+https://github.com/redhat-developer/vscode-java/wiki/JDK-Requirements
+
+vscode-java requires a Java Development Kit to run (NOT A JRE!). Since vscode-java 0.65.0, Java 11 is the minimum required version.
+
+https://www.vsixhub.com/vsix/1857/
+Java Extension Pack 0.13.0 Vsix File Free Download
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://code.visualstudio.com/docs/languages/java
+
+If you have already installed VS Code and want to add Java support to it, we recommend to use Java Extension Pack, a collection of extensions suggested by Microsoft:
+
+    Language Support for Java(TM) by Red Hat
+    Debugger for Java
+    Java Test Runner
+    Maven for Java
+    Project Manager for Java
+    Visual Studio IntelliCode
+
+Install the Java Extension Pack
+
+Alternatively, you can add Java language support to VS Code by installing the popular Java extensions by yourself.
+
+04/08/2021  06:17 PM       764,216,640 ideaIU-2021.1.exe
+04/08/2021  06:17 PM                84 ideaIU-2021.1.exe.sha256
+04/08/2021  06:17 PM       934,924,625 ideaIU-2021.1.win.zip
+04/08/2021  06:18 PM                88 ideaIU-2021.1.win.zip.sha256
+04/08/2021  06:18 PM       674,725,704 ideaIC-2021.1.exe
+04/08/2021  06:19 PM                84 ideaIC-2021.1.exe.sha256
+04/08/2021  06:20 PM       810,305,520 ideaIC-2021.1.win.zip
+04/08/2021  06:20 PM                88 ideaIC-2021.1.win.zip.sha256
+04/08/2021  06:21 PM        72,251,096 VSCodeUserSetup-x64-1.55.1.exe
+04/08/2021  06:21 PM        72,251,072 VSCodeSetup-x64-1.55.1.exe
+04/08/2021  06:21 PM        98,847,948 VSCode-win32-x64-1.55.1.zip
+04/08/2021  07:46 PM        44,763,308 redhat.java-0.76.0.vsix
+

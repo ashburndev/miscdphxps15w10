@@ -1,0 +1,179 @@
+6:49 AM 3/18/2021
+
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html    jdk-8u281
+https://www.oracle.com/java/technologies/javase-jdk11-downloads.html          jdk-11.0.10
+https://www.oracle.com/java/technologies/javase-jdk15-downloads.html          jdk-15.0.2
+https://www.oracle.com/java/technologies/javase-jdk16-downloads.html          jdk-16
+
+https://www.jetbrains.com/idea/download/#section=windows
+
+https://www.eclipse.org/downloads/
+https://www.eclipse.org/downloads/packages/
+
+https://grails.org/download.html
+https://micronaut.io/download/
+
+https://spring.io/tools
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>java -version
+java version "1.8.0_261"
+Java(TM) SE Runtime Environment (build 1.8.0_261-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.261-b12, mixed mode)
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\LocalApps\Java>
+C:\LocalApps\Java>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\Java
+
+03/15/2018  09:38 AM    <DIR>          jre1.8.0_144
+03/15/2018  09:38 AM    <DIR>          jdk1.8.0_144
+03/15/2018  09:42 AM    <DIR>          jre1.8.0_162
+03/15/2018  09:47 AM    <DIR>          jre-9.0.4
+03/15/2018  09:52 AM    <DIR>          jre1.8.0_131
+03/15/2018  09:52 AM    <DIR>          jdk1.8.0_131
+03/15/2018  09:53 AM    <DIR>          jdk1.8.0_162
+03/15/2018  09:53 AM    <DIR>          jdk-9.0.4
+06/19/2018  03:57 PM    <DIR>          jre-10.0.1
+06/19/2018  03:58 PM    <DIR>          jdk-10.0.1
+06/19/2018  06:24 PM    <DIR>          jre1.8.0_172
+06/19/2018  06:24 PM    <DIR>          jdk1.8.0_172
+03/12/2020  06:00 AM    <DIR>          jre1.8.0_241
+03/12/2020  06:00 AM    <DIR>          jdk1.8.0_241
+07/20/2020  07:02 AM    <DIR>          jre1.8.0_261
+07/20/2020  07:02 AM    <DIR>          jdk1.8.0_261
+08/07/2020  08:18 AM    <DIR>          jre1.8.0_251
+08/07/2020  08:18 AM    <DIR>          jdk1.8.0_251
+09/12/2020  12:54 PM    <DIR>          jdk-14.0.1
+09/15/2020  11:58 AM    <DIR>          jdk-11.0.9
+11/25/2020  08:46 AM    <DIR>          ..
+11/25/2020  08:46 AM    <DIR>          .
+10/24/2020  10:14 AM       179,769,466 jdk-11.0.9_windows-x64_bin.zip
+               1 File(s)    179,769,466 bytes
+              22 Dir(s)  35,438,186,496 bytes free
+
+C:\LocalApps\Java>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Program Files\Java>
+C:\Program Files\Java>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Program Files\Java
+
+06/08/2017  02:35 PM    <DIR>          jre1.8.0_131
+06/08/2017  02:35 PM    <DIR>          jdk1.8.0_131
+03/15/2018  09:42 AM    <DIR>          jdk1.8.0_162
+03/15/2018  09:47 AM    <DIR>          jdk-9.0.4
+09/12/2020  12:04 PM    <DIR>          ..
+09/12/2020  12:04 PM    <DIR>          .
+09/12/2020  12:04 PM    <DIR>          jdk-11.0.8
+               0 File(s)              0 bytes
+               7 Dir(s)  35,441,733,632 bytes free
+
+C:\Program Files\Java>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Program Files\JetBrains\PyCharm 2020.3>
+C:\Program Files\JetBrains\PyCharm 2020.3>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Program Files\JetBrains\PyCharm 2020.3
+
+12/20/2020  09:50 AM    <DIR>          license
+12/20/2020  09:50 AM    <DIR>          debug-eggs
+12/20/2020  09:50 AM    <DIR>          index
+12/20/2020  09:51 AM    <DIR>          help
+12/20/2020  09:51 AM    <DIR>          plugins
+12/20/2020  09:51 AM    <DIR>          skeletons
+12/20/2020  09:51 AM    <DIR>          lib
+12/20/2020  09:51 AM    <DIR>          ..
+12/20/2020  09:51 AM    <DIR>          .
+12/20/2020  09:51 AM    <DIR>          jbr
+12/20/2020  09:51 AM    <DIR>          bin
+12/01/2020  06:53 PM                15 build.txt
+12/01/2020  06:53 PM         8,151,040 icons.db
+12/01/2020  06:55 PM               406 product-info.json
+               3 File(s)      8,151,461 bytes
+              11 Dir(s)  35,470,778,368 bytes free
+
+C:\Program Files\JetBrains\PyCharm 2020.3>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\LocalApps>
+C:\LocalApps>dir /o:gd idea*
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps
+
+06/19/2018  05:43 PM    <DIR>          ideaIU-2018.1.5.win
+03/26/2019  08:41 PM    <DIR>          ideaIC-2018.3.5.win
+03/26/2019  08:45 PM    <DIR>          ideaIU-2018.3.5.win
+04/27/2019  11:37 AM    <DIR>          ideaIC-2019.1.win
+04/27/2019  12:52 PM    <DIR>          ideaIU-2019.1.win
+02/23/2020  05:30 PM    <DIR>          ideaIU-2019.3.3.win
+07/28/2020  12:51 PM    <DIR>          ideaIU-2020.2.win
+11/27/2020  09:48 AM    <DIR>          ideaIU-2020.2.4.win
+12/20/2020  05:56 PM    <DIR>          ideaIU-2020.3.win
+02/14/2021  09:04 AM    <DIR>          ideaIU-2020.3.2.win
+               0 File(s)              0 bytes
+              10 Dir(s)  35,498,811,392 bytes free
+
+C:\LocalApps>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>dir /o:gd | findstr /i "suite"
+06/08/2017  03:46 PM       533,543,241 groovy-grails-tool-suite-3.6.4.RELEASE-e4.4.2-win32-x86_64.zip
+08/07/2017  11:05 PM       416,500,381 spring-tool-suite-3.9.0.RELEASE-e4.7.0-win32-x86_64.zip
+11/28/2017  11:54 PM       419,744,048 spring-tool-suite-3.9.1.RELEASE-e4.7.1a-win32-x86_64.zip
+11/24/2018  05:34 PM       422,459,131 spring-tool-suite-3.9.6.RELEASE-e4.9.0-win32-x86_64.zip
+11/24/2018  05:35 PM       422,324,228 spring-tool-suite-3.9.6.RELEASE-e4.9.0-win32.zip
+01/06/2019  12:32 PM       418,894,683 spring-tool-suite-3.9.7.RELEASE-e4.10.0-win32-x86_64.zip
+01/06/2019  12:37 PM       353,173,069 spring-tool-suite-4-4.1.0.RELEASE-e4.10.0-win32.win32.x86_64.zip
+06/02/2019  10:55 AM       420,544,623 spring-tool-suite-3.9.8.RELEASE-e4.11.0-win32-x86_64.zip
+06/02/2019  10:56 AM       386,668,725 spring-tool-suite-4-4.2.2.RELEASE-e4.11.0-win32.win32.x86_64.zip
+06/23/2019  11:13 AM       425,591,485 spring-tool-suite-3.9.9.RELEASE-e4.12.0-win32-x86_64.zip
+06/23/2019  11:14 AM       391,772,153 spring-tool-suite-4-4.3.0.RELEASE-e4.12.0-win32.win32.x86_64.zip
+08/03/2019  04:28 PM       393,618,327 spring-tool-suite-4-4.3.1.RELEASE-e4.12.0-win32.win32.x86_64.zip
+01/19/2020  04:52 PM       432,820,170 spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64.zip
+01/19/2020  04:56 PM       397,612,527 spring-tool-suite-4-4.5.0.RELEASE-e4.14.0-win32.win32.x86_64.self-extracting.jar
+03/29/2020  01:14 PM       393,098,760 spring-tool-suite-4-4.6.0.RELEASE-e4.15.0-win32.win32.x86_64.self-extracting.jar
+09/02/2020  12:10 PM       399,600,816 spring-tool-suite-4-4.7.1.RELEASE-e4.16.0-win32.win32.x86_64.self-extracting.jar
+09/13/2020  10:15 AM       422,340,778 spring-tool-suite-4-4.7.2.RELEASE-e4.16.0-win32.win32.x86_64.self-extracting.jar
+12/12/2020  02:29 PM       592,629,145 spring-tool-suite-4-4.8.1.RELEASE-e4.17.0-win32.win32.x86_64.self-extracting.jar
+12/20/2020  08:24 AM       565,013,935 spring-tool-suite-4-4.9.0.RELEASE-e4.18.0-win32.win32.x86_64.self-extracting.jar
+03/18/2021  07:52 AM       573,404,200 spring-tool-suite-4-4.10.0.RELEASE-e4.19.0-win32.win32.x86_64.self-extracting.jar
+
+C:\Users\David Holberton\Downloads>
+
+
+
+
+
+
+git remote add origin https://github.com/ashburndev/dphtest1.git
+git branch -M main
+git push -u origin main
+
+git remote add origin https://github.com/ashburndev/dphtest2.git
+git branch -M main
+git push -u origin main
+
+
+
+

@@ -1,0 +1,354 @@
+7:15 AM 11/17/2021
+
+C:\Users\David Holberton\Downloads>mkdir gpgtmp
+
+C:\Users\David Holberton\Downloads>copy VSCode-win32-x64-1.62.2.zip gpgtmp
+        1 file(s) copied.
+
+C:\Users\David Holberton\Downloads>cd gpgtmp
+
+C:\Users\David Holberton\Downloads\gpgtmp>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\gpgtmp
+
+11/17/2021  07:14 AM    <DIR>          .
+11/17/2021  07:14 AM    <DIR>          ..
+11/17/2021  07:10 AM       111,562,995 VSCode-win32-x64-1.62.2.zip
+               1 File(s)    111,562,995 bytes
+               2 Dir(s)  217,956,818,944 bytes free
+
+C:\Users\David Holberton\Downloads\gpgtmp>
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --help | findstr /i "sign"
+Sign, check, encrypt or decrypt
+ -s, --sign                  make a signature
+     --clear-sign            make a clear text signature
+ -b, --detach-sign           make a detached signature
+     --verify                verify a signature
+     --list-signatures       list keys and signatures
+     --check-signatures      list and check key signatures
+     --quick-sign-key        quickly sign a key
+     --quick-lsign-key       quickly sign a key locally
+     --quick-revoke-sig      quickly revoke a key signature
+     --sign-key              sign a key
+     --lsign-key             sign a key locally
+     --edit-key              sign or edit a key
+ -u, --local-user USER-ID    use USER-ID to sign or decrypt
+ -se -r Bob [file]          sign and encrypt for user Bob
+ --clear-sign [file]        make a clear text signature
+ --detach-sign [file]       make a detached signature
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --detach-sign VSCode-win32-x64-1.62.2.zip
+
+C:\Users\David Holberton\Downloads\gpgtmp>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\gpgtmp
+
+11/17/2021  07:16 AM    <DIR>          ..
+11/17/2021  07:16 AM    <DIR>          .
+11/17/2021  07:10 AM       111,562,995 VSCode-win32-x64-1.62.2.zip
+11/17/2021  07:17 AM               566 VSCode-win32-x64-1.62.2.zip.sig
+               2 File(s)    111,563,561 bytes
+               2 Dir(s)  217,954,877,440 bytes free
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --armor --detach-sign VSCode-win32-x64-1.62.2.zip
+
+C:\Users\David Holberton\Downloads\gpgtmp>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\gpgtmp
+
+11/17/2021  07:17 AM    <DIR>          ..
+11/17/2021  07:17 AM    <DIR>          .
+11/17/2021  07:10 AM       111,562,995 VSCode-win32-x64-1.62.2.zip
+11/17/2021  07:17 AM               566 VSCode-win32-x64-1.62.2.zip.sig
+11/17/2021  07:17 AM               849 VSCode-win32-x64-1.62.2.zip.asc
+               3 File(s)    111,564,410 bytes
+               2 Dir(s)  217,971,097,600 bytes free
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --verify VSCode-win32-x64-1.62.2.zip.sig VSCode-win32-x64-1.62.2.zip
+gpg: Signature made 11/17/2021 7:16:54 AM Eastern Standard Time
+gpg:                using RSA key 14912E2F9B4D33703F5241ED90A2D107CF1C45C4
+gpg: Good signature from "David Holberton <dph@gmail.com>" [ultimate]
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --verify VSCode-win32-x64-1.62.2.zip.asc VSCode-win32-x64-1.62.2.zip
+gpg: Signature made 11/17/2021 7:17:48 AM Eastern Standard Time
+gpg:                using RSA key 14912E2F9B4D33703F5241ED90A2D107CF1C45C4
+gpg: Good signature from "David Holberton <dph@gmail.com>" [ultimate]
+
+C:\Users\David Holberton\Downloads\gpgtmp>
+C:\Users\David Holberton\Downloads\gpgtmp>copy VSCode-win32-x64-1.62.2.zip VSCode.zip
+        1 file(s) copied.
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --verify VSCode-win32-x64-1.62.2.zip.sig VSCode.zip
+gpg: Signature made 11/17/2021 7:16:54 AM Eastern Standard Time
+gpg:                using RSA key 14912E2F9B4D33703F5241ED90A2D107CF1C45C4
+gpg: Good signature from "David Holberton <dph@gmail.com>" [ultimate]
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --verify VSCode-win32-x64-1.62.2.zip.asc VSCode.zip
+gpg: Signature made 11/17/2021 7:17:48 AM Eastern Standard Time
+gpg:                using RSA key 14912E2F9B4D33703F5241ED90A2D107CF1C45C4
+gpg: Good signature from "David Holberton <dph@gmail.com>" [ultimate]
+
+C:\Users\David Holberton\Downloads\gpgtmp>
+C:\Users\David Holberton\Downloads\gpgtmp>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\gpgtmp
+
+11/17/2021  07:20 AM    <DIR>          ..
+11/17/2021  07:20 AM    <DIR>          .
+11/17/2021  07:10 AM       111,562,995 VSCode.zip
+11/17/2021  07:10 AM       111,562,995 VSCode-win32-x64-1.62.2.zip
+11/17/2021  07:17 AM               566 VSCode-win32-x64-1.62.2.zip.sig
+11/17/2021  07:17 AM               849 VSCode-win32-x64-1.62.2.zip.asc
+               4 File(s)    223,127,405 bytes
+               2 Dir(s)  217,846,968,320 bytes free
+
+C:\Users\David Holberton\Downloads\gpgtmp>
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --version
+gpg (GnuPG) 2.2.28
+libgcrypt 1.8.8
+Copyright (C) 2021 g10 Code GmbH
+License GNU GPL-3.0-or-later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Home: C:/gpg/keys-apache
+Supported algorithms:
+Pubkey: RSA, ELG, DSA, ECDH, ECDSA, EDDSA
+Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH,
+        CAMELLIA128, CAMELLIA192, CAMELLIA256
+Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Uncompressed, ZIP, ZLIB, BZIP2
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --list-keys
+C:/gpg/keys-apache/pubring.kbx
+------------------------------
+pub   rsa4096 2021-07-05 [SC]
+      14912E2F9B4D33703F5241ED90A2D107CF1C45C4
+uid           [ultimate] David Holberton <dph@gmail.com>
+sub   rsa4096 2021-07-05 [E]
+
+pub   rsa4096 2021-07-05 [SC]
+      E3D6F0B4BFE739B74B822001378549D87A82554F
+uid           [ unknown] James Bond <agent007@mi6.gov>
+sub   rsa4096 2021-07-05 [E]
+
+pub   rsa4096 2009-09-18 [SC]
+      A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
+uid           [ unknown] Mark E D Thomas <markt@apache.org>
+sub   rsa4096 2009-09-18 [E]
+
+
+C:\Users\David Holberton\Downloads\gpgtmp>gpg --list-secret-keys
+C:/gpg/keys-apache/pubring.kbx
+------------------------------
+sec   rsa4096 2021-07-05 [SC]
+      14912E2F9B4D33703F5241ED90A2D107CF1C45C4
+uid           [ultimate] David Holberton <dph@gmail.com>
+ssb   rsa4096 2021-07-05 [E]
+
+
+C:\Users\David Holberton\Downloads\gpgtmp>
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>
+C:\Users\David Holberton>dir /o:gd /s .ssh
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\.ssh
+
+08/20/2021  06:11 AM    <DIR>          save1
+08/20/2021  06:35 AM    <DIR>          ..
+08/20/2021  06:35 AM    <DIR>          .
+12/23/2020  07:13 AM             3,031 known_hosts
+08/20/2021  06:35 AM               575 id_rsa.pub
+08/20/2021  06:35 AM             2,610 id_rsa
+               3 File(s)          6,216 bytes
+
+ Directory of C:\Users\David Holberton\.ssh\save1
+
+08/20/2021  06:11 AM    <DIR>          ..
+08/20/2021  06:11 AM    <DIR>          .
+02/10/2019  08:04 AM             3,243 id_rsa
+02/10/2019  08:04 AM               746 id_rsa.pub
+12/23/2020  07:13 AM             3,031 known_hosts
+               3 File(s)          7,020 bytes
+
+     Total Files Listed:
+               6 File(s)         13,236 bytes
+               5 Dir(s)  217,849,364,480 bytes free
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+11/17/2021  07:10 AM        79,944,464 VSCodeUserSetup-x64-1.62.2.exe
+11/17/2021  07:10 AM        79,944,216 VSCodeSetup-x64-1.62.2.exe
+11/17/2021  07:10 AM       111,562,995 VSCode-win32-x64-1.62.2.zip
+11/17/2021  04:52 PM        19,772,672 imager_1.6.2.exe
+11/17/2021  04:56 PM     3,193,174,700 2021-10-30-raspios-bullseye-armhf-full.zip
+11/17/2021  04:57 PM                66 2021-10-30-raspios-bullseye-armhf-full.zip.sha256
+11/17/2021  04:58 PM     1,203,372,157 2021-10-30-raspios-bullseye-armhf.zip
+11/17/2021  04:59 PM                66 2021-10-30-raspios-bullseye-armhf.zip.sha256
+11/17/2021  05:00 PM       485,827,056 2021-10-30-raspios-bullseye-armhf-lite.zip
+11/17/2021  05:01 PM                66 2021-10-30-raspios-bullseye-armhf-lite.zip.sha256
+11/17/2021  05:01 PM            37,257 2021-10-30-raspios-bullseye-armhf-release_notes.txt
+11/17/2021  05:05 PM               838 2021-10-30-raspios-bullseye-armhf-RaspberryPiOS-info.txt
+            1099 File(s) 66,217,852,786 bytes
+              34 Dir(s)  212,717,301,760 bytes free
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile 2021-10-30-raspios-bullseye-armhf-full.zip SHA256
+SHA256 hash of 2021-10-30-raspios-bullseye-armhf-full.zip:
+77952abf31ed745275d5d20180f60dac7328f95fafbb9b83a91d1b350fc3ad76
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type 2021-10-30-raspios-bullseye-armhf-full.zip.sha256
+77952abf31ed745275d5d20180f60dac7328f95fafbb9b83a91d1b350fc3ad76
+77952abf31ed745275d5d20180f60dac7328f95fafbb9b83a91d1b350fc3ad76  ... from certutil command above
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+The micro SD card below was written using the MS Windows version of the Raspberry Pi Imager
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>dir /o:gd d:\
+ Volume in drive D is boot
+ Volume Serial Number is 1B13-F78A
+
+ Directory of d:\
+
+10/30/2021  11:12 AM    <DIR>          overlays
+10/29/2021  09:52 AM            26,417 bcm2708-rpi-b-plus.dtb
+10/29/2021  09:52 AM            18,693 COPYING.linux
+10/29/2021  09:52 AM             1,594 LICENCE.broadcom
+10/29/2021  09:52 AM         4,809,800 start_db.elf
+10/29/2021  09:52 AM            25,757 bcm2708-rpi-b-rev1.dtb
+10/29/2021  09:52 AM            26,146 bcm2708-rpi-b.dtb
+10/29/2021  09:52 AM            26,068 bcm2708-rpi-cm.dtb
+10/29/2021  09:52 AM            27,084 bcm2708-rpi-zero-w.dtb
+10/29/2021  09:52 AM            25,891 bcm2708-rpi-zero.dtb
+10/29/2021  09:52 AM            27,292 bcm2709-rpi-2-b.dtb
+10/29/2021  09:52 AM            27,441 bcm2710-rpi-2-b.dtb
+10/29/2021  09:52 AM            29,558 bcm2710-rpi-3-b-plus.dtb
+10/29/2021  09:52 AM            28,939 bcm2710-rpi-3-b.dtb
+10/29/2021  09:52 AM            27,429 bcm2710-rpi-cm3.dtb
+10/29/2021  09:52 AM            49,833 bcm2711-rpi-4-b.dtb
+10/29/2021  09:52 AM            49,877 bcm2711-rpi-400.dtb
+10/29/2021  09:52 AM            50,555 bcm2711-rpi-cm4.dtb
+10/29/2021  09:52 AM            52,456 bootcode.bin
+10/29/2021  09:52 AM           801,532 start_cd.elf
+10/29/2021  09:52 AM         3,717,224 start_x.elf
+10/29/2021  09:52 AM             7,285 fixup.dat
+10/29/2021  09:52 AM             5,411 fixup4.dat
+10/29/2021  09:52 AM             3,213 fixup4cd.dat
+10/29/2021  09:52 AM             8,426 fixup4db.dat
+10/29/2021  09:52 AM             8,420 fixup4x.dat
+10/29/2021  09:52 AM             3,213 fixup_cd.dat
+10/29/2021  09:52 AM            10,269 fixup_db.dat
+10/29/2021  09:52 AM            10,267 fixup_x.dat
+10/29/2021  09:52 AM         6,006,520 kernel.img
+10/29/2021  09:52 AM         6,355,040 kernel7.img
+10/29/2021  09:52 AM         6,780,320 kernel7l.img
+10/29/2021  09:52 AM         7,905,972 kernel8.img
+10/29/2021  09:52 AM         2,965,664 start.elf
+10/29/2021  09:52 AM         2,241,504 start4.elf
+10/29/2021  09:52 AM           801,532 start4cd.elf
+10/29/2021  09:52 AM         3,737,928 start4db.elf
+10/29/2021  09:52 AM         2,993,544 start4x.elf
+10/30/2021  11:12 AM             2,075 config.txt
+10/30/2021  11:53 AM               145 issue.txt
+10/30/2021  11:53 AM               190 cmdline.txt
+              40 File(s)     49,696,524 bytes
+               1 Dir(s)     213,866,496 bytes free
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads\raspios>
+C:\Users\David Holberton\Downloads\raspios>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\raspios
+
+11/17/2021  05:34 PM    <DIR>          ..
+11/17/2021  05:34 PM    <DIR>          .
+11/17/2021  04:56 PM     3,193,174,700 2021-10-30-raspios-bullseye-armhf-full.zip
+11/17/2021  04:57 PM                66 2021-10-30-raspios-bullseye-armhf-full.zip.sha256
+               2 File(s)  3,193,174,766 bytes
+               2 Dir(s)  208,976,023,552 bytes free
+
+C:\Users\David Holberton\Downloads\raspios>
+C:\Users\David Holberton\Downloads\raspios>7z l 2021-10-30-raspios-bullseye-armhf-full.zip
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive for archives:
+1 file, 3193174700 bytes (3046 MiB)
+
+Listing archive: 2021-10-30-raspios-bullseye-armhf-full.zip
+
+--
+Path = 2021-10-30-raspios-bullseye-armhf-full.zip
+Type = zip
+Physical Size = 3193174700
+64-bit = +
+Characteristics = Zip64
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2021-10-30 06:53:19 .....   9265217536   3193174358  2021-10-30-raspios-bullseye-armhf-full.img
+------------------- ----- ------------ ------------  ------------------------
+2021-10-30 06:53:19         9265217536   3193174358  1 files
+
+C:\Users\David Holberton\Downloads\raspios>7z x 2021-10-30-raspios-bullseye-armhf-full.zip
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive for archives:
+1 file, 3193174700 bytes (3046 MiB)
+
+Extracting archive: 2021-10-30-raspios-bullseye-armhf-full.zip
+--
+Path = 2021-10-30-raspios-bullseye-armhf-full.zip
+Type = zip
+Physical Size = 3193174700
+64-bit = +
+Characteristics = Zip64
+
+Everything is Ok
+
+Size:       9265217536
+Compressed: 3193174700
+
+C:\Users\David Holberton\Downloads\raspios>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\raspios
+
+11/17/2021  05:35 PM    <DIR>          ..
+11/17/2021  05:35 PM    <DIR>          .
+10/30/2021  06:53 AM     9,265,217,536 2021-10-30-raspios-bullseye-armhf-full.img
+11/17/2021  04:56 PM     3,193,174,700 2021-10-30-raspios-bullseye-armhf-full.zip
+11/17/2021  04:57 PM                66 2021-10-30-raspios-bullseye-armhf-full.zip.sha256
+               3 File(s) 12,458,392,302 bytes
+               2 Dir(s)  199,710,724,096 bytes free
+
+C:\Users\David Holberton\Downloads\raspios>
+C:\Users\David Holberton\Downloads\raspios>
+
+
+
+
+

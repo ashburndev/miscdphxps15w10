@@ -1,0 +1,133 @@
+6:48 AM 10/3/2021
+
+09/22/2021  08:52 PM       541,823,490 eclipse-jee-2021-09-R-win32-x86_64.zip
+09/22/2021  08:53 PM               170 eclipse-jee-2021-09-R-win32-x86_64.zip.sha512
+09/22/2021  08:55 PM       337,853,234 eclipse-java-2021-09-R-win32-x86_64.zip
+09/22/2021  08:56 PM               171 eclipse-java-2021-09-R-win32-x86_64.zip.sha512
+09/22/2021  08:59 PM       776,021,360 ideaIU-2021.2.2.exe
+09/22/2021  08:59 PM                86 ideaIU-2021.2.2.exe.sha256
+09/22/2021  09:00 PM       960,254,960 ideaIU-2021.2.2.win.zip
+09/22/2021  09:00 PM                90 ideaIU-2021.2.2.win.zip.sha256
+09/22/2021  09:01 PM       681,977,408 ideaIC-2021.2.2.exe
+09/22/2021  09:01 PM                86 ideaIC-2021.2.2.exe.sha256
+09/22/2021  09:01 PM       829,064,187 ideaIC-2021.2.2.win.zip
+09/22/2021  09:02 PM                90 ideaIC-2021.2.2.win.zip.sha256
+09/22/2021  09:08 PM       185,665,886 openjdk-17_windows-x64_bin.zip
+09/22/2021  09:08 PM                64 openjdk-17_windows-x64_bin.zip.sha256
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile ideaIU-2021.2.2.win.zip SHA256
+SHA256 hash of ideaIU-2021.2.2.win.zip:
+64de729f5a38cae2e1d75f7652a6d07d30ddf01690076cfc2ea6f8faf0d829c0
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type ideaIU-2021.2.2.win.zip.sha256
+64de729f5a38cae2e1d75f7652a6d07d30ddf01690076cfc2ea6f8faf0d829c0 *ideaIU-2021.2.2.win.zip
+64de729f5a38cae2e1d75f7652a6d07d30ddf01690076cfc2ea6f8faf0d829c0
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>certutil -hashfile eclipse-jee-2021-09-R-win32-x86_64.zip SHA512
+SHA512 hash of eclipse-jee-2021-09-R-win32-x86_64.zip:
+a3dc7ffce3a679809df2ad4f40f7da0291fc23483adea0135a8e77ddc033efae68ed6babcb6e9e1ee6135e1e6918913bb578428f8829e5e4867c29ab9e4c8d37
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type eclipse-jee-2021-09-R-win32-x86_64.zip.sha512
+a3dc7ffce3a679809df2ad4f40f7da0291fc23483adea0135a8e77ddc033efae68ed6babcb6e9e1ee6135e1e6918913bb578428f8829e5e4867c29ab9e4c8d37  eclipse-jee-2021-09-R-win32-x86_64.zip
+a3dc7ffce3a679809df2ad4f40f7da0291fc23483adea0135a8e77ddc033efae68ed6babcb6e9e1ee6135e1e6918913bb578428f8829e5e4867c29ab9e4c8d37
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://tomcat.apache.org/tomcat-9.0-doc/index.html
+https://tomcat.apache.org/tomcat-9.0-doc/introduction.html
+https://tomcat.apache.org/tomcat-9.0-doc/setup.html
+https://tomcat.apache.org/tomcat-9.0-doc/windows-service-howto.html
+https://tomcat.apache.org/tomcat-9.0-doc/html-manager-howto.html
+
+In many production environments it is very useful to have the capability to manage your web applications without having to shut down and restart Tomcat. This document is for the HTML web interface to the web application manager.
+
+https://tomcat.apache.org/tomcat-9.0-doc/manager-howto.html
+
+You can find the role names in the web.xml file of the Manager web application. The available roles are:
+
+    manager-gui — Access to the HTML interface.
+    manager-status — Access to the "Server Status" page only.
+    manager-script — Access to the tools-friendly plain text interface that is described in this document, and to the "Server Status" page.
+    manager-jmx — Access to JMX proxy interface and to the "Server Status" page.
+
+<user username="craigmcc" password="secret" roles="standard,manager-script" />
+
+The user-friendly HTML interface of Manager web application is located at
+
+http://{host}:{port}/manager/html
+
+
+https://tomcat.apache.org/download-90.cgi
+
+10/03/2021  07:04 AM        12,116,713 apache-tomcat-9.0.53.zip
+10/03/2021  07:04 AM               833 apache-tomcat-9.0.53.zip.asc
+10/03/2021  07:04 AM               154 apache-tomcat-9.0.53.zip.sha512
+10/03/2021  07:04 AM        11,575,393 apache-tomcat-9.0.53.tar.gz
+10/03/2021  07:04 AM               833 apache-tomcat-9.0.53.tar.gz.asc
+10/03/2021  07:05 AM               157 apache-tomcat-9.0.53.tar.gz.sha512
+10/03/2021  07:05 AM        12,638,429 apache-tomcat-9.0.53-windows-x86.zip
+10/03/2021  07:05 AM               833 apache-tomcat-9.0.53-windows-x86.zip.asc
+10/03/2021  07:05 AM               166 apache-tomcat-9.0.53-windows-x86.zip.sha512
+10/03/2021  07:05 AM        12,836,677 apache-tomcat-9.0.53-windows-x64.zip
+10/03/2021  07:05 AM               833 apache-tomcat-9.0.53-windows-x64.zip.asc
+10/03/2021  07:05 AM               166 apache-tomcat-9.0.53-windows-x64.zip.sha512
+10/03/2021  07:06 AM        12,380,184 apache-tomcat-9.0.53.exe
+10/03/2021  07:06 AM               833 apache-tomcat-9.0.53.exe.asc
+10/03/2021  07:06 AM               154 apache-tomcat-9.0.53.exe.sha512
+10/03/2021  07:06 AM         6,632,407 apache-tomcat-9.0.53-fulldocs.tar.gz
+10/03/2021  07:06 AM               833 apache-tomcat-9.0.53-fulldocs.tar.gz.asc
+10/03/2021  07:06 AM               166 apache-tomcat-9.0.53-fulldocs.tar.gz.sha512
+10/03/2021  07:06 AM         2,812,573 apache-tomcat-9.0.53-deployer.zip
+10/03/2021  07:07 AM               833 apache-tomcat-9.0.53-deployer.zip.asc
+10/03/2021  07:07 AM               163 apache-tomcat-9.0.53-deployer.zip.sha512
+10/03/2021  07:07 AM         2,798,908 apache-tomcat-9.0.53-deployer.tar.gz
+10/03/2021  07:07 AM               833 apache-tomcat-9.0.53-deployer.tar.gz.asc
+10/03/2021  07:07 AM               166 apache-tomcat-9.0.53-deployer.tar.gz.sha512
+10/03/2021  07:07 AM         9,672,775 apache-tomcat-9.0.53-embed.tar.gz
+10/03/2021  07:07 AM               833 apache-tomcat-9.0.53-embed.tar.gz.asc
+10/03/2021  07:07 AM               163 apache-tomcat-9.0.53-embed.tar.gz.sha512
+10/03/2021  07:07 AM         9,672,261 apache-tomcat-9.0.53-embed.zip
+10/03/2021  07:07 AM               833 apache-tomcat-9.0.53-embed.zip.asc
+10/03/2021  07:08 AM               160 apache-tomcat-9.0.53-embed.zip.sha512
+
+
+C:\Users\David Holberton\Downloads>certutil -hashfile apache-tomcat-9.0.53-windows-x64.zip SHA512
+SHA512 hash of apache-tomcat-9.0.53-windows-x64.zip:
+049ba3af23aaae0e734f4fc499b37bcd239bf33553804352b2686229a20aeb8457fcaeffcd503fffc9bc4dd0d56b30dbc734af32e9780372accad15e046d1a05
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>type apache-tomcat-9.0.53-windows-x64.zip.sha512
+049ba3af23aaae0e734f4fc499b37bcd239bf33553804352b2686229a20aeb8457fcaeffcd503fffc9bc4dd0d56b30dbc734af32e9780372accad15e046d1a05 *apache-tomcat-9.0.53-windows-x64.zip
+049ba3af23aaae0e734f4fc499b37bcd239bf33553804352b2686229a20aeb8457fcaeffcd503fffc9bc4dd0d56b30dbc734af32e9780372accad15e046d1a05
+
+C:\Users\David Holberton\Downloads>
+
+08/15/2021  08:18 AM    <DIR>          Java
+08/15/2021  10:23 AM    <DIR>          eclipse-jee-2019-06-R-win32-x86_64
+09/10/2021  02:49 PM    <DIR>          eclipse-jee-2021-09-R-win32-x86_64
+10/03/2021  07:49 AM    <DIR>          ideaIU-2021.2.2.win
+
+
+Microsoft Windows [Version 10.0.19043.1237]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>java -version
+java version "1.8.0_301"
+Java(TM) SE Runtime Environment (build 1.8.0_301-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.301-b09, mixed mode)
+
+C:\Users\David Holberton>grails --version
+Grails version: 2.5.4
+
+C:\Users\David Holberton>groovy --version
+Groovy Version: 3.0.7 JVM: 1.8.0_301 Vendor: Oracle Corporation OS: Windows 10
+
+C:\Users\David Holberton>
+

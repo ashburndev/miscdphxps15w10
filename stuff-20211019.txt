@@ -1,0 +1,61 @@
+7:45 AM 10/19/2021
+
+https://www.raspberrypi.com/
+https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-32-bit
+https://ubuntu.com/download/raspberry-pi
+https://ubuntu.com/download/raspberry-pi/thank-you?version=20.04.3&architecture=server-arm64+raspi
+
+echo "7e405f473d8a9e3254cd702edaeecd5509a85cde1e9e99e120f6c82156c6958f *ubuntu-20.04.3-preinstalled-server-arm64+raspi.img.xz" | shasum -a 256 --check
+
+https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview
+
+https://ubuntu.com/download/raspberry-pi/thank-you?version=21.10&architecture=desktop-arm64+raspi
+
+ Run this command in your terminal in the directory the iso was downloaded to verify the SHA256 checksum:
+echo "5187d507099f26bc4d8218085109af498fae5ff93b40c668f83bab5c7574d954 *ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz" | shasum -a 256 --check
+
+You should get the following output:
+ubuntu-21.10-preinstalled-server-desktop-arm64+raspi.iso: OK
+
+Or follow this tutorial to learn how to verify downloads 
+
+https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview
+
+10/19/2021  07:49 AM       729,207,404 ubuntu-20.04.3-preinstalled-server-arm64+raspi.img.xz
+10/19/2021  07:51 AM     2,027,828,568 ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://releases.ubuntu.com/21.10/
+https://www.omgubuntu.co.uk/2021/10/ubuntu-21-10-is-now-available-to-download
+https://ubuntu.com/
+https://ubuntu.com/#download
+https://ubuntu.com/download/desktop/thank-you?version=21.10&architecture=amd64
+
+ Run this command in your terminal in the directory the iso was downloaded to verify the SHA256 checksum:
+echo "f8d3ab0faeaecb5d26628ae1aa21c9a13e0a242c381aa08157db8624d574b830 *ubuntu-21.10-desktop-amd64.iso" | shasum -a 256 --check
+
+You should get the following output:
+ubuntu-21.10-desktop-amd64.iso: OK
+
+Or follow this tutorial to learn how to verify downloads 
+
+https://ubuntu.com/raspberry-pi
+https://ubuntu.com/download/raspberry-pi
+
+ Run this command in your terminal in the directory the iso was downloaded to verify the SHA256 checksum:
+echo "5187d507099f26bc4d8218085109af498fae5ff93b40c668f83bab5c7574d954 *ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz" | shasum -a 256 --check
+
+You should get the following output:
+ubuntu-21.10-preinstalled-server-desktop-arm64+raspi.iso: OK
+
+Or follow this tutorial to learn how to verify downloads 
+
+https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview
+
+10/19/2021  07:49 AM       729,207,404 ubuntu-20.04.3-preinstalled-server-arm64+raspi.img.xz
+10/19/2021  07:51 AM     2,027,828,568 ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+10/19/2021  07:56 AM     3,116,482,560 ubuntu-21.10-desktop-amd64.iso
+10/19/2021  08:00 AM     3,116,482,560 ubuntu-21.10-desktop-amd64(1).iso
+10/19/2021  08:03 AM     2,027,828,568 ubuntu-21.10-preinstalled-desktop-arm64+raspi.img(1).xz
+

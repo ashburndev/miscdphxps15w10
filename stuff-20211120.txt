@@ -1,0 +1,86 @@
+11:21 AM 11/20/2021
+
+https://ubuntu.com/download/raspberry-pi
+https://ubuntu.com/download/raspberry-pi/thank-you?version=21.10&architecture=desktop-arm64+raspi
+
+ Run this command in your terminal in the directory the iso was downloaded to verify the SHA256 checksum:
+echo "5187d507099f26bc4d8218085109af498fae5ff93b40c668f83bab5c7574d954 *ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz" | shasum -a 256 --check
+
+You should get the following output:
+ubuntu-21.10-preinstalled-server-desktop-arm64+raspi.iso: OK
+
+Or follow this tutorial to learn how to verify downloads 
+
+https://ubuntu.com/tutorials/how-to-verify-ubuntu#1-overview
+https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview
+https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#4-optional-usb-boot
+
+11/14/2021  02:07 PM     3,071,934,464 ubuntu-20.04.3-desktop-amd64.iso
+11/14/2021  02:07 PM               202 ubuntu-20.04.3-desktop-amd64.SHA256SUMS.txt
+11/14/2021  02:07 PM               833 ubuntu-20.04.3-desktop-amd64.SHA256SUMS.gpg
+11/14/2021  02:12 PM     3,116,482,560 ubuntu-21.10-desktop-amd64.iso
+11/14/2021  02:12 PM               198 ubuntu-21.10-desktop-amd64.SHA256SUMS.txt
+11/14/2021  02:13 PM               833 ubuntu-21.10-desktop-amd64.SHA256SUMS.gpg
+11/17/2021  07:10 AM        79,944,464 VSCodeUserSetup-x64-1.62.2.exe
+11/17/2021  07:10 AM        79,944,216 VSCodeSetup-x64-1.62.2.exe
+11/17/2021  07:10 AM       111,562,995 VSCode-win32-x64-1.62.2.zip
+11/17/2021  04:52 PM        19,772,672 imager_1.6.2.exe
+11/17/2021  04:56 PM     3,193,174,700 2021-10-30-raspios-bullseye-armhf-full.zip
+11/17/2021  04:57 PM                66 2021-10-30-raspios-bullseye-armhf-full.zip.sha256
+11/17/2021  04:58 PM     1,203,372,157 2021-10-30-raspios-bullseye-armhf.zip
+11/17/2021  04:59 PM                66 2021-10-30-raspios-bullseye-armhf.zip.sha256
+11/17/2021  05:00 PM       485,827,056 2021-10-30-raspios-bullseye-armhf-lite.zip
+11/17/2021  05:01 PM                66 2021-10-30-raspios-bullseye-armhf-lite.zip.sha256
+11/17/2021  05:01 PM            37,257 2021-10-30-raspios-bullseye-armhf-release_notes.txt
+11/17/2021  05:05 PM               838 2021-10-30-raspios-bullseye-armhf-RaspberryPiOS-info.txt
+11/17/2021  06:01 PM       311,415,984 balenaEtcher-Setup-1.7.0.exe
+11/20/2021  11:23 AM     2,027,828,568 ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+11/20/2021  11:26 AM               361 stuff-20211120.txt
+            1102 File(s) 68,557,097,699 bytes
+              35 Dir(s)  195,597,602,816 bytes free
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>7z l ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+
+7-Zip 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
+
+Scanning the drive for archives:
+1 file, 2027828568 bytes (1934 MiB)
+
+Listing archive: ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+
+--
+Path = ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+Type = xz
+Physical Size = 2027828568
+Method = LZMA2:18 CRC64
+Streams = 1
+Blocks = 8966
+Cluster Size = 1048576
+Characteristics = BlockPackSize BlockUnpackSize
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+                    .....   9400728576   2027828568  ubuntu-21.10-preinstalled-desktop-arm64+raspi.img
+------------------- ----- ------------ ------------  ------------------------
+                            9400728576   2027828568  1 files
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads\raspitemp>
+C:\Users\David Holberton\Downloads\raspitemp>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads\raspitemp
+
+11/20/2021  11:35 AM    <DIR>          ..
+11/20/2021  11:35 AM    <DIR>          .
+11/20/2021  11:23 AM     2,027,828,568 ubuntu-21.10-preinstalled-desktop-arm64+raspi.img.xz
+11/20/2021  11:23 AM     9,400,728,576 ubuntu-21.10-preinstalled-desktop-arm64+raspi.img
+               2 File(s) 11,428,557,144 bytes
+               2 Dir(s)  184,169,734,144 bytes free
+
+C:\Users\David Holberton\Downloads\raspitemp>
+
+
+

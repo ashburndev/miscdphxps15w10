@@ -1,0 +1,111 @@
+8:13 AM 4/25/2021
+
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>cd \LocalApps\extjsbook
+
+C:\LocalApps\extjsbook>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\extjsbook
+
+04/25/2021  08:09 AM    <DIR>          sourcecode
+04/25/2021  08:21 AM    <DIR>          ..
+04/25/2021  08:21 AM    <DIR>          .
+04/25/2021  08:02 AM        13,057,158 Ext_JS_in_Action_Second_Edition.pdf
+04/25/2021  08:02 AM        16,617,023 Ext_JS_in_Action_Second_Edition.mobi
+04/25/2021  08:02 AM        13,372,912 Ext_JS_in_Action_Second_Edition.epub
+04/25/2021  08:03 AM        35,261,457 ext-js-in-action-second-edition_pack.zip
+04/25/2021  08:03 AM        57,832,834 ExtJSinAction2E_SourceCode.zip
+04/25/2021  08:18 AM        19,239,258 Ext_JS_in_Action_v1.pdf
+04/25/2021  08:18 AM        20,297,565 Ext_JS_in_Action_v1.mobi
+04/25/2021  08:18 AM        17,231,798 Ext_JS_in_Action_v1.epub
+04/25/2021  08:19 AM        49,794,789 ext-js-in-action_pack.zip
+               9 File(s)    242,704,794 bytes
+               3 Dir(s)  21,238,603,776 bytes free
+
+C:\LocalApps\extjsbook>dir /o:gd sourcecode
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\extjsbook\sourcecode
+
+01/29/2013  09:51 AM    <DIR>          ux
+01/15/2014  02:49 PM    <DIR>          examples
+01/15/2014  02:49 PM    <DIR>          ext4
+01/15/2014  02:50 PM    <DIR>          __MACOSX
+04/25/2021  08:09 AM    <DIR>          ..
+04/25/2021  08:09 AM    <DIR>          .
+01/15/2014  12:42 PM            35,121 LICENSE
+01/15/2014  02:37 PM               113 README.md
+               2 File(s)         35,234 bytes
+               6 Dir(s)  21,238,538,240 bytes free
+
+C:\LocalApps\extjsbook>dir /o:gd sourcecode\ext4
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\extjsbook\sourcecode\ext4
+
+05/16/2013  03:55 PM    <DIR>          packages
+05/16/2013  03:55 PM    <DIR>          plugins
+05/16/2013  03:55 PM    <DIR>          .sencha
+05/16/2013  03:55 PM    <DIR>          resources
+06/19/2013  11:14 AM    <DIR>          cmd
+06/19/2013  11:14 AM    <DIR>          locale
+06/19/2013  11:14 AM    <DIR>          examples
+06/19/2013  11:14 AM    <DIR>          welcome
+06/19/2013  11:14 AM    <DIR>          src
+01/15/2014  02:49 PM    <DIR>          ..
+01/15/2014  02:49 PM    <DIR>          .
+05/16/2013  03:55 PM             1,482 license.txt
+05/16/2013  03:55 PM               718 file-header.js
+05/16/2013  03:55 PM             2,533 bootstrap.js
+05/16/2013  03:55 PM           357,316 release-notes.html
+05/16/2013  03:55 PM             5,287 index.html
+05/16/2013  03:55 PM               224 version.properties
+05/16/2013  03:55 PM            16,964 build.xml
+05/16/2013  03:55 PM             4,200 ext-theme-neptune.js
+05/16/2013  03:55 PM                 0 ext-theme-access.js
+05/16/2013  03:55 PM                 0 ext-theme-classic-sandbox.js
+05/16/2013  03:55 PM                 0 ext-theme-classic.js
+05/16/2013  03:55 PM                 0 ext-theme-gray.js
+05/16/2013  03:55 PM         6,430,344 ext-all-rtl-dev.js
+05/16/2013  03:55 PM         6,372,661 ext-all-dev.js
+05/16/2013  03:55 PM         6,373,419 ext-all-rtl-debug-w-comments.js
+05/16/2013  03:55 PM         6,315,736 ext-all-debug-w-comments.js
+05/16/2013  03:55 PM         1,163,424 ext-debug-w-comments.js
+05/16/2013  03:55 PM         1,198,760 ext-dev.js
+05/16/2013  03:55 PM         1,523,409 ext-all-rtl.js
+05/16/2013  03:55 PM         1,497,654 ext-all.js
+05/16/2013  03:55 PM           236,393 ext.js
+05/16/2013  03:55 PM           640,194 ext-debug.js
+05/16/2013  03:55 PM         3,453,070 ext-all-rtl-debug.js
+05/16/2013  03:55 PM         3,406,933 ext-all-debug.js
+01/15/2014  02:49 PM             6,148 .DS_Store
+              25 File(s)     39,006,869 bytes
+              11 Dir(s)  21,238,599,680 bytes free
+
+C:\LocalApps\extjsbook>
+C:\LocalApps\extjsbook>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+vs code open html in browser
+
+https://stackoverflow.com/questions/30039512/how-to-view-an-html-file-in-the-browser-with-visual-studio-code
+
+https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+
+How open html file in browser from Visual Studio code?
+Usage
+
+    use Alt + B shortcut to open current html file in default browser, or Shift + Alt + B to choose a browser. ...
+    when you choose oepn in Other Browsers , a browser list will display, and you could choose one to open current file.
+    when you choose open in Default Browser , it means system default browser by default.
+
+Aug 11, 2018
+

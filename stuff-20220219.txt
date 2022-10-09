@@ -1,0 +1,49 @@
+9:33 AM 2/19/2022
+
+https://getpocket.com/explore/item/the-irs-already-has-all-your-income-tax-data-so-why-do-americans-still-have-to-file-their-taxes?utm_source=pocket-newtab
+
+https://spring.io/tools
+
+https://www.jetbrains.com/help/idea/getting-started-with-grails3.html?source=google&medium=cpc&campaign=9725425121&gclid=EAIaIQobChMIo-bq_4CM9gIVEonICh1pFgQ0EAAYASAAEgJdXvD_BwE
+
+https://www.stichlberger.com/software/groovy-simple-svg-builder/
+
+https://grails.org/download.html
+https://github.com/grails/grails-core/releases/download/v1.3.0/grails-1.3.0.zip  ==> Not Found
+
+02/19/2022  09:47 AM        48,385,758 grails-1.2.1.zip
+02/19/2022  09:47 AM        48,488,122 grails-1.2.2.zip
+02/19/2022  09:47 AM        48,068,169 grails-1.2.3.zip
+02/19/2022  09:47 AM        48,525,459 grails-1.2.4.zip
+02/19/2022  09:48 AM        47,841,838 grails-1.2.5.zip
+
+02/19/2022  09:47 AM        48,385,758 grails-1.2.1.zip
+02/19/2022  09:47 AM        48,488,122 grails-1.2.2.zip
+02/19/2022  09:47 AM        48,068,169 grails-1.2.3.zip
+02/19/2022  09:47 AM        48,525,459 grails-1.2.4.zip
+02/19/2022  09:48 AM        47,841,838 grails-1.2.5.zip
+02/19/2022  09:49 AM               874 stuff020220219.txt
+02/19/2022  09:49 AM        49,911,479 grails-1.3.1.zip
+02/19/2022  09:50 AM        48,769,209 grails-1.3.2.zip
+02/19/2022  09:50 AM        48,764,824 grails-1.3.3.zip
+02/19/2022  09:50 AM        48,552,191 grails-1.3.4.zip
+02/19/2022  09:50 AM        49,056,348 grails-1.3.5.zip
+02/19/2022  09:50 AM        48,034,463 grails-1.3.6.zip
+02/19/2022  09:50 AM        48,447,111 grails-1.3.7.zip
+02/19/2022  09:51 AM        48,480,888 grails-1.3.8.zip
+02/19/2022  09:51 AM        48,482,104 grails-1.3.9.zip
+02/19/2022  09:51 AM        55,896,947 grails-2.0.0.zip
+02/19/2022  09:51 AM        56,112,007 grails-2.0.1.zip
+02/19/2022  09:51 AM        60,410,768 grails-2.0.2.zip
+02/19/2022  09:51 AM        60,343,613 grails-2.0.3.zip
+02/19/2022  09:52 AM        56,138,177 grails-2.0.4.zip
+02/19/2022  09:52 AM        58,672,545 grails-2.1.0.zip
+02/19/2022  09:52 AM        58,851,853 grails-2.1.1.zip
+02/19/2022  09:52 AM       119,211,079 grails-2.1.2.zip
+02/19/2022  09:52 AM       115,539,592 grails-2.1.3.zip
+02/19/2022  09:52 AM       120,156,173 grails-2.1.4.zip
+02/19/2022  09:53 AM       120,410,936 grails-2.1.5.zip
+02/19/2022  09:53 AM       119,062,532 grails-2.2.0.zip
+
+
+

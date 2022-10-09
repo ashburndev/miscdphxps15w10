@@ -1,0 +1,23 @@
+7:37 AM 9/20/2022
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+All the elasticsearch examples I've seen use JSON as the payload format to uploaded content (as well as JSON for the payload for returned search results). Can XML be substituted for JSON for the upload payload format - and with the same behavior?
+
+Or is the alternative to upload pubs XML as a single, monolithic string wrapped by a elementary JSON "wrapper"?
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html
+Java SE Development Kit 18.0.2.1
+
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+Java SE Development Kit 17.0.4.1
+
+https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+Java SE Development Kit 11.0.16
+
+https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html
+Java SE Development Kit 8u333
+
+

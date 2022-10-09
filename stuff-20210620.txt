@@ -1,0 +1,114 @@
+9:18 AM 6/20/2021
+
+https://www.eclipse.org/downloads/packages/release/2021-06
+https://www.eclipse.org/downloads/packages/
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+http://www.assafelovic.com/blog/2016/5/16/how-to-recursively-find-all-duplicate-files-in-a-directory-in-java
+
+C:\Users\David Holberton\SaveDownloads
+C:\Users\David Holberton\Downloads
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>java FindDuplicates
+Please supply a directory path
+
+C:\Users\David Holberton\Downloads>
+
+
+java FindDuplicates "C:\Users\David Holberton\SaveDownloads"
+
+
+C:\Users\David Holberton\Downloads>javac FindDuplicates.java
+
+C:\Users\David Holberton\Downloads>java  FindDuplicates "C:\Users\David Holberton\SaveDownloads"
+Sun Jun 20 15:40:13 EDT 2021
+C:\Users\David Holberton\SaveDownloads\eclipse-inst-win64(2).exe
+C:\Users\David Holberton\SaveDownloads\eclipse-inst-win64.exe
+C:\Users\David Holberton\SaveDownloads\eclipse-java-neon-3-win32-x86_64.zip
+C:\Users\David Holberton\SaveDownloads\incubating-netbeans-java-9.0-bin(2).zip
+C:\Users\David Holberton\SaveDownloads\jdk-8u131-windows-x64.exe
+C:\Users\David Holberton\SaveDownloads\mysql-installer-community-5.7.19.0(2).msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-community-5.7.19.0.msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-web-community-5.7.19.0(2).msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-web-community-5.7.19.0.msi
+C:\Users\David Holberton\SaveDownloads\mysql-workbench-community-6.3.9-winx64(2).msi
+C:\Users\David Holberton\SaveDownloads\mysql-workbench-community-6.3.9-winx64.msi
+C:\Users\David Holberton\SaveDownloads\netbeans-8.2-windows.exe
+C:\Users\David Holberton\SaveDownloads\NOOBS_v2_8_1.zip.sha256.txt
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 Setup.exe
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 x64 Setup.exe
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 x64.zip
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176.zip
+Sun Jun 20 15:43:23 EDT 2021
+
+
+C:\Users\David Holberton\SaveDownloads\eclipse-inst-win64(1).exe
+C:\Users\David Holberton\SaveDownloads\eclipse-inst-win64(2).exe
+
+
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 Setup(1).exe
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 Setup.exe
+
+
+C:\Users\David Holberton\SaveDownloads\mysql-workbench-community-6.3.9-winx64(1).msi
+C:\Users\David Holberton\SaveDownloads\mysql-workbench-community-6.3.9-winx64(2).msi
+C:\Users\David Holberton\SaveDownloads\mysql-workbench-community-6.3.9-winx64.msi
+
+
+C:\Users\David Holberton\SaveDownloads\eclipse-java-neon-3-win32-x86_64 (1).zip
+C:\Users\David Holberton\SaveDownloads\eclipse-java-neon-3-win32-x86_64.zip
+
+
+C:\Users\David Holberton\SaveDownloads\jdk-8u131-windows-x64(1).exe
+C:\Users\David Holberton\SaveDownloads\jdk-8u131-windows-x64.exe
+
+
+C:\Users\David Holberton\SaveDownloads\netbeans-8.2-windows (1).exe
+C:\Users\David Holberton\SaveDownloads\netbeans-8.2-windows.exe
+
+
+C:\Users\David Holberton\SaveDownloads\NOOBS_lite_v2_8.zip.sha256.txt
+C:\Users\David Holberton\SaveDownloads\NOOBS_v2_8_1.zip.sha256.txt
+
+
+C:\Users\David Holberton\SaveDownloads\mysql-installer-community-5.7.19.0(1).msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-community-5.7.19.0(2).msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-community-5.7.19.0.msi
+
+
+C:\Users\David Holberton\SaveDownloads\incubating-netbeans-java-9.0-bin(1).zip
+C:\Users\David Holberton\SaveDownloads\incubating-netbeans-java-9.0-bin(2).zip
+
+
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176(1).zip
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176.zip
+
+
+C:\Users\David Holberton\SaveDownloads\mysql-installer-web-community-5.7.19.0(1).msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-web-community-5.7.19.0(2).msi
+C:\Users\David Holberton\SaveDownloads\mysql-installer-web-community-5.7.19.0.msi
+
+
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 x64(1).zip
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 x64.zip
+
+
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 x64 Setup(1).exe
+C:\Users\David Holberton\SaveDownloads\Sublime Text Build 3176 x64 Setup.exe
+
+
+C:\Users\David Holberton\SaveDownloads\eclipse-inst-win64 (1).exe
+C:\Users\David Holberton\SaveDownloads\eclipse-inst-win64.exe
+
+
+
+C:\Users\David Holberton\Downloads>
+
+
+
+
+
+

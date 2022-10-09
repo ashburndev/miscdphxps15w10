@@ -1,0 +1,396 @@
+8:01 AM 3/27/2021
+
+https://tomcat.apache.org/tomcat-8.5-doc/windows-service-howto.html
+https://tomcat.apache.org/tomcat-8.5-doc/ssl-howto.html
+
+"%JAVA_HOME%\bin\keytool" -genkey -alias tomcat -keyalg RSA
+
+"%JAVA_HOME%\bin\keytool" -genkey -alias tomcat -keyalg RSA -keystore \path\to\my\keystore
+
+To import an existing certificate signed by your own CA into a PKCS12 keystore using OpenSSL you would execute a command like:
+
+openssl pkcs12 -export -in mycert.crt -inkey mykey.key
+                       -out mycert.p12 -name tomcat -CAfile myCA.crt
+                       -caname root -chain
+
+To define a Java (JSSE) connector, regardless of whether the APR library is loaded or not, use one of the following:
+
+<!-- Define an HTTP/1.1 Connector on port 8443, JSSE NIO implementation -->
+<Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
+           sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation"
+           port="8443" .../>
+
+<!-- Define an HTTP/1.1 Connector on port 8443, JSSE NIO2 implementation -->
+<Connector protocol="org.apache.coyote.http11.Http11Nio2Protocol"
+           sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation"
+           port="8443" .../>
+
+<!-- Define an SSL Coyote HTTP/1.1 Connector on port 8443 -->
+<Connector
+           protocol="org.apache.coyote.http11.Http11NioProtocol"
+           port="8443" maxThreads="200"
+           scheme="https" secure="true" SSLEnabled="true"
+           keystoreFile="${user.home}/.keystore" keystorePass="changeit"
+           clientAuth="false" sslProtocol="TLS"/>
+
+
+keytool -genkey -alias tomcat -keyalg RSA -keystore .\localhost-rsa.jks
+
+I selected changeit and tomcatpw
+
+C:\LocalApps\apache-tomcat-8.5.61\conf>keytool -genkey -alias tomcat -keyalg RSA -keystore .\localhost-rsa.jks
+Enter keystore password:
+Re-enter new password:
+They don't match. Try again
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  David Holberton
+What is the name of your organizational unit?
+  [Unknown]:  myou
+What is the name of your organization?
+  [Unknown]:  myorg
+What is the name of your City or Locality?
+  [Unknown]:  Ashburn
+What is the name of your State or Province?
+  [Unknown]:  Virginia
+What is the two-letter country code for this unit?
+  [Unknown]:  US
+Is CN=David Holberton, OU=myou, O=myorg, L=Ashburn, ST=Virginia, C=US correct?
+  [no]:  yes
+
+Enter key password for <tomcat>
+        (RETURN if same as keystore password):
+Key password is too short - must be at least 6 characters
+Enter key password for <tomcat>
+        (RETURN if same as keystore password):
+Key password is too short - must be at least 6 characters
+Enter key password for <tomcat>
+        (RETURN if same as keystore password):
+Re-enter new password:
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore .\localhost-rsa.jks -destkeystore .\localhost-rsa.jks -deststoretype pkcs12".
+
+C:\LocalApps\apache-tomcat-8.5.61\conf>
+C:\LocalApps\apache-tomcat-8.5.61\conf>keytool -v -list -keystore localhost-rsa.jks
+Enter keystore password:
+Keystore type: jks
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: tomcat
+Creation date: Mar 27, 2021
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=David Holberton, OU=myou, O=myorg, L=Ashburn, ST=Virginia, C=US
+Issuer: CN=David Holberton, OU=myou, O=myorg, L=Ashburn, ST=Virginia, C=US
+Serial number: 7abb389e
+Valid from: Sat Mar 27 08:27:54 EDT 2021 until: Fri Jun 25 08:27:54 EDT 2021
+Certificate fingerprints:
+         MD5:  1E:0D:08:8A:C7:3B:3A:E4:31:AF:B0:E2:0B:B8:F4:7E
+         SHA1: C7:58:A8:9B:4A:F6:A9:1E:B5:73:A7:F9:EA:77:B5:1B:11:F4:3C:90
+         SHA256: 10:75:17:73:AD:0D:43:D3:BE:C3:65:8A:23:20:70:FD:20:D0:1D:89:1F:B8:76:4E:FA:C9:2F:D5:8B:3D:83:A2
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: A4 68 99 0F 9B 20 06 47   12 AC C6 FF 85 36 6F 2E  .h... .G.....6o.
+0010: B2 07 F0 80                                        ....
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore localhost-rsa.jks -destkeystore localhost-rsa.jks -deststoretype pkcs12".
+
+C:\LocalApps\apache-tomcat-8.5.61\conf>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
+
+First implemented in Tomcat 9 and back-ported to 8.5, Tomcat now supports Server Name Indication (SNI). This allows multiple SSL configurations to be associated with a single secure connector with the configuration used for any given connection determined by the host name requested by the client. To facilitate this, the SSLHostConfig element was added which can be used to define one of these configurations. Any number of SSLHostConfig may be nested in a Connector. At the same time, support was added for multiple certificates to be associated with a single SSLHostConfig. Each SSL certificate is therefore configured in a Certificate element with in an SSLHostConfig. For further information, see the SSL Support section below.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://tomcat.apache.org/tomcat-8.5-doc/ssl-howto.html
+https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
+https://tomcat.apache.org/tomcat-8.5-doc/config/http.html#SSL_Support
+
+https://www.jamf.com/jamf-nation/articles/544/server-xml-changes-for-tomcat-8-5
+
+SSLHostConfig Element
+The SSLHostConfig element is nested within the Connector element and contains the following attributes:
+    sslProtocol
+    protocols
+    honorCipherOrder
+    certificateVerification
+    ciphers
+
+Certificate Element
+The Certificate element is nested within the SSLHostConfig element and contains the following attributes:
+    type
+    certificateKeystoreFile
+    certificateKeystorePassword
+    certificateKeystoreType
+    certificateKeyAlias
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+     <Connector port="443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+          maxThreads="150" SSLEnabled="true">
+          <SSLHostConfig
+               sslProtocol="TLS"
+               protocols=""
+               honorCipherOrder=""
+               certificateVerification=""
+               ciphers="">
+               <Certificate certificateKeystoreFile="conf/localhost-rsa.jks"
+                         type="RSA"
+                         certificateKeystorePassword="changeit"
+                         certificateKeystoreType="JKS"
+                         certificateKeyAlias="tomcat"/>
+          </SSLHostConfig>
+     </Connector>
+
+     <Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
+          port="443" maxThreads="200"
+          scheme="https" secure="true" SSLEnabled="true"
+          clientAuth="false" sslProtocol="TLS"
+          keystoreFile="conf/localhost-rsa.jks" keystorePass="changeit"
+          keystoreType="JKS" keyAlias="tomcat" keyPass="tomcatpw"
+          sslEnabledProtocols="TLSv1.2" />
+
+     <Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
+          port="443" maxThreads="200"
+          scheme="https" secure="true" SSLEnabled="true"
+          clientAuth="none" sslProtocol="TLS"
+          keystoreFile="conf/localhost-rsa.jks" keystorePass="changeit"
+          keystoreType="JKS" keyAlias="tomcat" keyPass="tomcatpw"
+          sslEnabledProtocols="TLSv1.2" />
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://localhost/docs/setup.html
+https://localhost/docs/ssl-howto.html
+https://localhost/docs/apr.html
+https://localhost/docs/logging.html
+
+https://spring.io/guides/
+https://spring.io/guides/gs/actuator-service
+https://spring.io/guides/gs/convert-jar-to-war/
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#build-tool-plugins-maven-packaging
+
+https://start.spring.io/
+
+./mvnw spring-boot:run
+
+./mvnw clean package
+java -jar target/gs-actuator-service-0.1.0.jar
+
+http://localhost:8080/health
+
+curl localhost:8080/hello-world
+
+mvn dependency:tree
+
+Microsoft Windows [Version 10.0.19042.868]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>curl localhost:8080/hello-world
+{"timestamp":"2021-03-27T15:34:39.151+00:00","status":404,"error":"Not Found","message":"","path":"/hello-world"}
+C:\Users\David Holberton>
+C:\Users\David Holberton>curl localhost:8080/health
+{"timestamp":"2021-03-27T15:34:50.247+00:00","status":404,"error":"Not Found","message":"","path":"/health"}
+C:\Users\David Holberton>
+C:\Users\David Holberton>curl localhost:8080/actuator/health
+{"status":"UP"}
+C:\Users\David Holberton>
+C:\Users\David Holberton>curl localhost:8080/actuator
+{"_links":{"self":{"href":"http://localhost:8080/actuator","templated":false},"health":{"href":"http://localhost:8080/actuator/health","templated":false},"health-path":{"href":"http://localhost:8080/actuator/health/{*path}","templated":true},"info":{"href":"http://localhost:8080/actuator/info","templated":false}}}
+C:\Users\David Holberton>
+C:\Users\David Holberton>curl localhost:8080/actuator/info
+{}
+C:\Users\David Holberton>
+
+
+C:\Users\David Holberton\Downloads\dphtemp\actuator-service>mvn dependency:tree
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------< com.example:actuator-service >--------------------
+[INFO] Building actuator-service 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-dependency-plugin:3.1.2:tree (default-cli) @ actuator-service ---
+[INFO] com.example:actuator-service:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.4.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.4.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.4.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.4.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.4.4:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.13.3:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.13.3:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.30:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.27:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.4.4:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.4.4:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.11.4:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.11.4:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.11.4:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.11.4:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.6.5:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.12:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.4.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.4.4:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.11.4:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.11.4:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.4.4:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.44:compile
+[INFO] |  |  +- org.glassfish:jakarta.el:jar:3.0.3:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.44:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.3.5:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.3.5:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.3.5:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.3.5:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.3.5:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.3.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.4.4:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.4.4:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.4.4:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.30:compile
+[INFO]    +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:test
+[INFO]    |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:test
+[INFO]    +- org.assertj:assertj-core:jar:3.18.1:test
+[INFO]    +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO]    +- org.junit.jupiter:junit-jupiter:jar:5.7.1:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-api:jar:5.7.1:test
+[INFO]    |  |  +- org.apiguardian:apiguardian-api:jar:1.1.0:test
+[INFO]    |  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+[INFO]    |  |  \- org.junit.platform:junit-platform-commons:jar:1.7.1:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-params:jar:5.7.1:test
+[INFO]    |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.7.1:test
+[INFO]    |     \- org.junit.platform:junit-platform-engine:jar:1.7.1:test
+[INFO]    +- org.mockito:mockito-core:jar:3.6.28:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.10.22:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.10.22:test
+[INFO]    |  \- org.objenesis:objenesis:jar:3.1:test
+[INFO]    +- org.mockito:mockito-junit-jupiter:jar:3.6.28:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.3.5:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.3.5:compile
+[INFO]    +- org.springframework:spring-test:jar:5.3.5:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.7.0:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.967 s
+[INFO] Finished at: 2021-03-27T10:59:45-04:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\David Holberton\Downloads\dphtemp\actuator-service>
+C:\Users\David Holberton\Downloads\dphtemp\actuator-service>mvn spring-boot:run
+[INFO] Scanning for projects...
+[INFO]
+[INFO] --------------------< com.example:actuator-service >--------------------
+[INFO] Building actuator-service 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:2.4.4:run (default-cli) > test-compile @ actuator-service >>>
+[INFO]
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ actuator-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ actuator-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\David Holberton\Downloads\dphtemp\actuator-service\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ actuator-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\David Holberton\Downloads\dphtemp\actuator-service\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ actuator-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\David Holberton\Downloads\dphtemp\actuator-service\target\test-classes
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:2.4.4:run (default-cli) < test-compile @ actuator-service <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot-maven-plugin:2.4.4:run (default-cli) @ actuator-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.4)
+
+2021-03-27 11:33:55.017  INFO 8680 --- [           main] c.e.a.ActuatorServiceApplication         : Starting ActuatorServiceApplication using Java 1.8.0_261 on dphxps15 with PID 8680 (C:\Users\David Holberton\Downloads\dphtemp\actuator-service\target\classes started by David Holberton in C:\Users\David Holberton\Downloads\dphtemp\actuator-service)
+2021-03-27 11:33:55.020  INFO 8680 --- [           main] c.e.a.ActuatorServiceApplication         : No active profile set, falling back to default profiles: default
+2021-03-27 11:33:56.088  INFO 8680 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-27 11:33:56.099  INFO 8680 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-27 11:33:56.100  INFO 8680 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27 11:33:56.163  INFO 8680 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-27 11:33:56.163  INFO 8680 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2021-03-27 11:33:56.379  INFO 8680 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-27 11:33:56.527  INFO 8680 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-27 11:33:56.566  INFO 8680 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-27 11:33:56.578  INFO 8680 --- [           main] c.e.a.ActuatorServiceApplication         : Started ActuatorServiceApplication in 1.887 seconds (JVM running for 2.208)
+2021-03-27 11:34:39.111  INFO 8680 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-27 11:34:39.111  INFO 8680 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-27 11:34:39.117  INFO 8680 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+
+
+http://localhost/actservwar/actuator/health
+https://localhost/actservwar/actuator/health
+
+{"status":"UP"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,239 @@
+6:53 AM 6/26/2021
+
+    Schedule
+    Speakers
+
+Date
+June 25 – 26, 2021
+CEST
+ 
+Location
+Online Event
+Search
+Friday, June 25, 2021
+Saturday, June 26, 2021
+12:45 - 13:15 CEST
+Intermediate byte code jvm
+Making Java more dynamic
+Rafael Winterhalter
+Rafael Winterhalter Scienta, Software consultant
+12:45 - 13:15 CEST
+Intermediate Microservices Kubernetes Cloud Hosting
+Running Java Applications inside Kubernetes with Nested Container Architecture
+Ruslan Synytsky
+Ruslan Synytsky Jelastic, CEO and co-founder
+13:30 - 14:00 CEST
+Intermediate Kotlin
+Custom IDE inspections for effective testing
+Alex Levin
+Alex Levin Senior software engineer
+13:30 - 14:00 CEST
+Intermediate jvm projectpanama
+Talk to me gently and how Java native interface will change in not so distant future
+Jaroslaw Palka
+Jaroslaw Palka Neo4j, Performance Engineer, Team lead
+14:15 - 15:00 CEST
+All
+Duke: Star Trek with Java 16 Code Challenges
+Rafael del Nero
+Rafael del Nero FabFitFun, Senior Software Engineer
+15:00 - 16:45 CEST
+All
+Break in Spatial Chat
+SpatialChat
+SpatialChat
+16:45 - 17:15 CEST
+All unit testing JUnit testing
+Advanced Testing Patterns
+Tom Cools
+Tom Cools Info Support nv, Software Developer
+16:45 - 17:15 CEST
+All Quarkus Apachecamel integration
+Supersonic Subatomic Apache Camel
+Zineb Bendhiba
+Zineb Bendhiba Red Hat, Senior Software Engineer
+17:30 - 18:00 CEST
+Intermediate cloud native cloud Kubernetes openliberty openshift Microservices
+Exploring Stateful Microservices built with Open Source Java in Kubernetes
+Mary Grygleski
+Mary Grygleski IBM, Senior Developer Advocate
+17:30 - 18:00 CEST
+Intermediate MicroProfile jakarta ee cloud cloud-native
+Survival Guide for the Java Architect in the Cloud Era
+Otavio Santana
+Otavio Santana ZupInnovation, Principal Engineer
+18:15 - 18:45 CEST
+Pattern Matching: Small Enhancement or Major Feature?
+Hanno Embregts
+Hanno Embregts Info Support, Software architect
+18:15 - 18:45 CEST
+Pump up your productivity with Continuous Testing
+Edson Yanaga
+Edson Yanaga Red Hat, Director of Developer Experience
+19:00 - 19:30 CEST
+All Elastic Search DynamoDB S3 Cloud Native Development cloud Java Kafka Kinesis Dropwizard Spring Boot Architecture Microservices
+Micro services for the next Billion
+Tejas Chopra
+Tejas Chopra Netflix, Inc., Senior Software Engineer
+19:00 - 19:30 CEST
+All Project Reactor Microservices reactive programming
+Project Reactor by Example
+Denny Abraham Cheriyan
+Denny Abraham Cheriyan Microsoft
+19:45 - 20:30 CEST
+All Algebra PatternMatching
+Algebraic in Java: Pattern Matching
+Chandra Guntur
+Chandra Guntur BNY Mellon, Technical Fellow, Distinguished Engineer
+19:45 - 20:30 CEST
+How to Build Megaservices - High Throughput Microservices
+Hugh McKee
+Hugh McKee Lightbend, Developer Advocate
+20:45 - 22:00 CEST
+PARTY
+
+Event powered by Emamo
+Terms + Privacy
+
+
+
+
+    Schedule
+    Speakers
+
+Date
+June 25 – 26, 2021
+CEST
+ 
+Location
+Online Event
+Search
+Friday, June 25, 2021
+Saturday, June 26, 2021
+10:00 - 10:15 CEST
+All
+Grand welcome
+Oli
+Oli Konfy, CEO
+10:15 - 10:45 CEST
+Kotlinizing Helidon
+Dmitry Alexandrov
+Dmitry Alexandrov Oracle, Software developer
+10:15 - 10:45 CEST
+All
+My Experiences as a Beginner of OpenJDK contributor
+Koichi Sakata
+Koichi Sakata NTT DATA Corporation, Senior Java Developer
+11:00 - 11:30 CEST
+Beginner Performance Monitoring
+Demystifying the Java Flight Recorder API
+Karan Balkar
+Karan Balkar LTI, Mobile application developer
+11:00 - 11:30 CEST
+Intermediate scala 3 model domain types
+Get more clarity with opaque types in Scala 3
+Magda Stozek
+Magda Stozek SoftwareMill, Scala developer
+11:45 - 12:15 CEST
+Intermediate Kotlin CLI jvm picocli
+AN INTRODUCTION TO CREATING CLI APPLICATIONS USING PICOCLI
+Julien Lengrand-Lambert
+Julien Lengrand-Lambert ING, Software developer
+12:15 - 12:45 CEST
+All
+Break in Spatial Chat
+SpatialChat
+SpatialChat
+12:45 - 13:15 CEST
+Intermediate byte code jvm
+Making Java more dynamic
+Rafael Winterhalter
+Rafael Winterhalter Scienta, Software consultant
+12:45 - 13:15 CEST
+Intermediate Microservices Kubernetes Cloud Hosting
+Running Java Applications inside Kubernetes with Nested Container Architecture
+Ruslan Synytsky
+Ruslan Synytsky Jelastic, CEO and co-founder
+13:30 - 14:00 CEST
+Intermediate Kotlin
+Custom IDE inspections for effective testing
+Alex Levin
+Alex Levin Senior software engineer
+13:30 - 14:00 CEST
+Intermediate jvm projectpanama
+Talk to me gently and how Java native interface will change in not so distant future
+Jaroslaw Palka
+Jaroslaw Palka Neo4j, Performance Engineer, Team lead
+14:15 - 15:00 CEST
+All
+Duke: Star Trek with Java 16 Code Challenges
+Rafael del Nero
+Rafael del Nero FabFitFun, Senior Software Engineer
+15:00 - 16:45 CEST
+All
+Break in Spatial Chat
+SpatialChat
+SpatialChat
+16:45 - 17:15 CEST
+All unit testing JUnit testing
+Advanced Testing Patterns
+Tom Cools
+Tom Cools Info Support nv, Software Developer
+16:45 - 17:15 CEST
+All Quarkus Apachecamel integration
+Supersonic Subatomic Apache Camel
+Zineb Bendhiba
+Zineb Bendhiba Red Hat, Senior Software Engineer
+17:30 - 18:00 CEST
+Intermediate cloud native cloud Kubernetes openliberty openshift Microservices
+Exploring Stateful Microservices built with Open Source Java in Kubernetes
+Mary Grygleski
+Mary Grygleski IBM, Senior Developer Advocate
+17:30 - 18:00 CEST
+Intermediate MicroProfile jakarta ee cloud cloud-native
+Survival Guide for the Java Architect in the Cloud Era
+Otavio Santana
+Otavio Santana ZupInnovation, Principal Engineer
+18:15 - 18:45 CEST
+Pattern Matching: Small Enhancement or Major Feature?
+Hanno Embregts
+Hanno Embregts Info Support, Software architect
+18:15 - 18:45 CEST
+Pump up your productivity with Continuous Testing
+Edson Yanaga
+Edson Yanaga Red Hat, Director of Developer Experience
+19:00 - 19:30 CEST
+All Elastic Search DynamoDB S3 Cloud Native Development cloud Java Kafka Kinesis Dropwizard Spring Boot Architecture Microservices
+Micro services for the next Billion
+Tejas Chopra
+Tejas Chopra Netflix, Inc., Senior Software Engineer
+19:00 - 19:30 CEST
+All Project Reactor Microservices reactive programming
+Project Reactor by Example
+Denny Abraham Cheriyan
+Denny Abraham Cheriyan Microsoft
+19:45 - 20:30 CEST
+All Algebra PatternMatching
+Algebraic in Java: Pattern Matching
+Chandra Guntur
+Chandra Guntur BNY Mellon, Technical Fellow, Distinguished Engineer
+19:45 - 20:30 CEST
+How to Build Megaservices - High Throughput Microservices
+Hugh McKee
+Hugh McKee Lightbend, Developer Advocate
+20:45 - 22:00 CEST
+PARTY
+
+Event powered by Emamo
+Terms + Privacy
+
+
+
+https://www.dropbox.com/s/2c33jk734okx28p/picoCLI-jlove-2021.pdf?dl=0
+
+https://www.dropbox.com/s/2c33jk734okx28p/picoCLI-jlove-2021.pdf?dl=0
+
+https://www.dropbox.com/s/2c33jk734okx28p/picoCLI-jlove-2021.pdf?dl=0
+
+
+https://github.com/jlengrand/swacli

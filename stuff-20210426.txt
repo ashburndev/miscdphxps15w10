@@ -1,0 +1,76 @@
+9:07 PM 4/26/2021
+
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>cd \LocalApps\extjsbook
+
+C:\LocalApps\extjsbook>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\extjsbook
+
+04/25/2021  08:09 AM    <DIR>          sourcecode
+04/25/2021  08:21 AM    <DIR>          ..
+04/25/2021  08:21 AM    <DIR>          .
+04/25/2021  08:02 AM        13,057,158 Ext_JS_in_Action_Second_Edition.pdf
+04/25/2021  08:02 AM        16,617,023 Ext_JS_in_Action_Second_Edition.mobi
+04/25/2021  08:02 AM        13,372,912 Ext_JS_in_Action_Second_Edition.epub
+04/25/2021  08:03 AM        35,261,457 ext-js-in-action-second-edition_pack.zip
+04/25/2021  08:03 AM        57,832,834 ExtJSinAction2E_SourceCode.zip
+04/25/2021  08:18 AM        19,239,258 Ext_JS_in_Action_v1.pdf
+04/25/2021  08:18 AM        20,297,565 Ext_JS_in_Action_v1.mobi
+04/25/2021  08:18 AM        17,231,798 Ext_JS_in_Action_v1.epub
+04/25/2021  08:19 AM        49,794,789 ext-js-in-action_pack.zip
+               9 File(s)    242,704,794 bytes
+               3 Dir(s)  18,031,214,592 bytes free
+
+C:\LocalApps\extjsbook>dir /o:gd sourcecode
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\extjsbook\sourcecode
+
+01/29/2013  09:51 AM    <DIR>          ux
+01/15/2014  02:49 PM    <DIR>          examples
+01/15/2014  02:49 PM    <DIR>          ext4
+01/15/2014  02:50 PM    <DIR>          __MACOSX
+04/25/2021  08:09 AM    <DIR>          ..
+04/25/2021  08:09 AM    <DIR>          .
+01/15/2014  12:42 PM            35,121 LICENSE
+01/15/2014  02:37 PM               113 README.md
+               2 File(s)         35,234 bytes
+               6 Dir(s)  18,029,912,064 bytes free
+
+C:\LocalApps\extjsbook>dir /o:gd sourcecode\examples
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\extjsbook\sourcecode\examples
+
+01/15/2014  02:35 PM    <DIR>          ch01
+01/15/2014  02:35 PM    <DIR>          ch02
+01/15/2014  02:35 PM    <DIR>          ch12
+01/15/2014  02:35 PM    <DIR>          ch13
+01/15/2014  02:35 PM    <DIR>          ch06
+01/15/2014  02:35 PM    <DIR>          ch03
+01/15/2014  02:35 PM    <DIR>          ch04
+01/15/2014  02:35 PM    <DIR>          ch05
+01/15/2014  02:35 PM    <DIR>          ch10
+01/15/2014  02:35 PM    <DIR>          ch07
+01/15/2014  02:35 PM    <DIR>          ch08
+01/15/2014  02:35 PM    <DIR>          ch09
+01/15/2014  02:35 PM    <DIR>          ch11
+01/15/2014  02:35 PM    <DIR>          ch14
+01/15/2014  02:49 PM    <DIR>          ..
+01/15/2014  02:49 PM    <DIR>          .
+01/15/2014  02:49 PM             6,148 .DS_Store
+               1 File(s)          6,148 bytes
+              16 Dir(s)  18,029,834,240 bytes free
+
+C:\LocalApps\extjsbook>
+
+
+
+

@@ -1,0 +1,115 @@
+8:30 AM 4/1/2021
+
+without ethernet cable being connected, and wifi turned off (I hope)
+
+Microsoft Windows [Version 10.0.19042.868]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>netsh interface show interface
+
+Admin State    State          Type             Interface Name
+-------------------------------------------------------------------------
+Enabled        Disconnected   Dedicated        Wi-Fi
+
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+without ethernet cable being connected, and wifi turned off (I hope)
+
+Microsoft Windows [Version 10.0.19042.868]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>netsh interface show interface
+
+Admin State    State          Type             Interface Name
+-------------------------------------------------------------------------
+Enabled        Connected      Dedicated        Ethernet 4
+Enabled        Disconnected   Dedicated        Wi-Fi
+
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\dphtemp>git --version
+git version 2.31.1.windows.1
+
+C:\dphtemp>git clone git@github.com:ashburndev/raspinfo.git
+Cloning into 'raspinfo'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 226 (delta 6), reused 10 (delta 1), pack-reused 211
+Receiving objects: 100% (226/226), 579.47 KiB | 12.88 MiB/s, done.
+Resolving deltas: 100% (85/85), done.
+
+C:\dphtemp>
+C:\dphtemp>cd raspinfo
+
+C:\dphtemp\raspinfo>git log --pretty=format:"%h -%an, %ai : %s"
+0f20bee -ashburndev, 2020-06-27 12:14:35 -0400 : dphrpi905
+1bb27c1 -ashburndev, 2020-06-27 11:08:08 -0400 : dphrpi904
+a6afc23 -ashburndev, 2020-06-10 06:12:05 -0400 : dphrpi903
+52687ad -ashburndev, 2020-06-09 22:34:59 -0400 : dphrpi902
+c540d04 -ashburndev, 2020-06-09 22:02:01 -0400 : dphrpi901
+a5b81ef -ashburndev, 2018-07-03 07:17:04 -0400 : Update rpi-os-downloads.MD
+3d2a933 -ashburndev, 2018-07-03 07:06:38 -0400 : Update rpi-os-downloads.MD
+89bc63b -ashburndev, 2018-07-03 07:04:15 -0400 : Update rpi-os-downloads.MD
+2420c2a -ashburndev, 2018-07-03 06:51:12 -0400 : Update rpi-os-downloads.MD
+0eaf105 -ashburndev, 2018-07-03 06:49:47 -0400 : Update rpi-os-downloads.MD
+c570e29 -ashburndev, 2018-07-02 07:18:51 -0400 : Create rpi-os-downloads.MD
+c09d125 -David P Holberton, 2018-06-26 06:11:04 -0400 : remove -o from free, add cat os-release
+4651f7d -David P Holberton, 2018-06-23 10:41:09 -0400 : new info for rpi3bp01
+50e7746 -David P. Holberton, 2017-10-14 11:01:36 -0400 : ran raspinfo.sh on dphrpi100
+843d4fd -adevmm2osx, 2017-10-11 07:41:49 -0400 : moved several files to origproj
+a3a1d6d -David Holberton, 2016-09-12 15:38:51 -0400 : run raspinfo.sh on dphrpi36
+197be92 -David Holberton, 2016-09-12 13:11:47 -0400 : run raspinfo.sh on dphrpi51
+9667dd1 -David Holberton, 2016-09-12 09:59:23 -0400 : run rashpinfo.sh on dphrpi50
+4af8d8b -David Holberton, 2016-09-12 05:44:06 -0400 : add linux script to write raspian to microsd
+bdedbc3 -David P. Holberton, 2016-09-01 10:45:20 -0400 : add new commands to raspinfo.sh
+d3df86f -David P. Holberton, 2016-08-25 08:06:08 -0400 : add new commands to raspinfo.sh
+facc6ca -David P. Holberton, 2016-08-22 06:40:38 -0400 : update raspinfo.sh and save results
+1a70cc2 -ashburndev, 2016-08-19 06:58:19 -0400 : Create nucpartitions.md
+592713b -David P. Holberton, 2016-08-17 08:04:50 -0400 : collect edid data for RPi 3 on Sony 4K TV
+afda753 -David Holberton, 2016-08-17 07:38:23 -0400 : edit shorter script for just video info
+99bd085 -David Holberton, 2016-08-17 07:34:13 -0400 : create shorter script for just video info
+df5bea7 -ashburndev, 2016-08-17 07:24:59 -0400 : Update README.md
+f6d08e3 -ashburndev, 2016-08-17 07:24:06 -0400 : Update README.md
+6ceba05 -ashburndev, 2016-08-17 07:23:18 -0400 : Update README.md
+ca8a78f -David P. Holberton, 2016-08-17 06:53:38 -0400 : add more commands to raspinfo.sh
+b9b645e -David P. Holberton, 2016-08-16 08:36:15 -0400 : new raspinfo after update/upgrade
+b44d3e0 -ashburndev, 2016-08-15 12:29:02 -0400 : Update README.md
+d911084 -ashburndev, 2016-08-15 09:05:16 -0400 : Update README.md
+068d32a -ashburndev, 2016-08-15 09:02:11 -0400 : Update README.md
+c06fe3f -ashburndev, 2016-08-15 09:00:50 -0400 : Update README.md
+af9b624 -David P. Holberton, 2016-08-15 08:55:59 -0400 : another workaround for rpi browser github issue
+a345f7d -David P. Holberton, 2016-08-15 08:46:59 -0400 : add raspinfo.md, workaround for rpi browser github issue
+f1134fd -ashburndev, 2016-08-15 08:16:39 -0400 : Create README.md
+a0d4267 -David Holberton, 2016-08-15 08:06:51 -0400 : first commit
+
+C:\dphtemp\raspinfo>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Microsoft Windows [Version 10.0.19042.906]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>
+
+Device name	dphxps15
+Processor	Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz   2.80 GHz
+Installed RAM	16.0 GB (15.9 GB usable)
+Device ID	E5600C2C-91D0-49A9-B555-8731958C0404
+Product ID	00330-80000-00000-AA027
+System type	64-bit operating system, x64-based processor
+Pen and touch	Touch support with 10 touch points
+
+Edition	Windows 10 Pro
+Version	20H2
+Installed on	‎9/‎1/‎2020
+OS build	19042.906
+Experience	Windows Feature Experience Pack 120.2212.551.0
+
+
